@@ -1,0 +1,35 @@
+name: CityBike Lima Scraper
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # Cada 30 minutos
+  workflow_dispatch:          # Permite lanzarlo manualmente
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run collector
+        env:
+          OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
+        run: python collector.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/*.xlsx data/*.csv
+          git commit -m "Update data [skip ci]" || echo "No changes to commit"
+          git push
