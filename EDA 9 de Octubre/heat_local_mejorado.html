@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bb1c4ae407db1eb2dcd4045826f4b63f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bb1c4ae407db1eb2dcd4045826f4b63f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bb1c4ae407db1eb2dcd4045826f4b63f = L.map(
+                "map_bb1c4ae407db1eb2dcd4045826f4b63f",
+                {
+                    center: [-12.119172715686274, -77.03111411764706],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_20b5b4715f736bc02b9e78df328fc180 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_20b5b4715f736bc02b9e78df328fc180.addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+            var heat_map_e6ec33a754bc8b3af3d219b3bb5f508c = L.heatLayer(
+                [[-12.1190126, -77.039928, 2.7369394359685617], [-12.122125, -77.011506, 3.4779530744336573], [-12.123368, -77.035637, 3.1622746185852977], [-12.1250365, -77.0373073, 3.2453478964401294], [-12.118497, -77.045048, 3.0809061488673137], [-12.1283328, -77.0353586, 3.248381877022654], [-12.103375, -77.029535, 2.9207119741100325], [-12.13176, -77.02971, 1.7042302357836336], [-12.1295502, -77.0241593, 3.350323624595469], [-12.1278816, -77.0294289, 2.8974514563106797], [-12.1197331, -77.0290916, 3.15453074433657], [-12.1107703, -77.0494, 3.080501618122977], [-12.122464, -77.031208, 2.6642394822006477], [-12.1220145, -77.0246459, 3.442556634304207], [-12.110583, -77.036259, 3.584142394822006], [-12.113541, -77.049135, 3.0137540453074427], [-12.127469, -77.011515, 3.1027508090614884], [-12.0914467, -77.0190921, 5.0], [-12.108822, -77.030403, 3.4354773462783172], [-12.1232664, -77.0268261, 3.6860841423948223], [-12.116439, -77.037294, 3.561218985976268], [-12.107284, -77.028261, 3.6650485436893203], [-12.110498, -77.044991, 3.643088303282478], [-12.119361, -77.026758, 3.074433656957929], [-12.1289245, -77.0269035, 2.792880258899676], [-12.133867, -77.028311, 2.247168284789644], [-12.11928, -77.03687, 2.9158576051779934], [-12.111647, -77.033347, 3.9029126213592233], [-12.12378, -77.033694, 2.253814147018031], [-12.135091, -77.024853, 1.546116504854369], [-12.12225, -77.020597, 3.067961165048544], [-12.1305704, -77.0195018, 1.6585760517799353], [-12.119232, -77.033696, 3.3423229054297017], [-12.111361, -77.051797, 1.6012675296655883], [-12.113362, -77.0457856, 1.8804900601017105], [-12.116391, -77.026614, 3.306681896059395], [-12.114198, -77.038894, 3.5005393743257818], [-12.1135528, -77.0310859, 2.892394822006472], [-12.1219288, -77.018143, 2.6812297734627832], [-12.1258495, -77.0219643, 3.541666666666666], [-12.1193071, -77.015962, 3.3935634663790006], [-12.1170034, -77.042041, 2.0376791493296347], [-12.126933, -77.0092536, 1.3885517799352753], [-12.1231563, -77.0397424, 2.994336569579288], [-12.105838, -77.033209, 3.0339805825242716], [-12.1257284, -77.02794, 3.3360302049622437], [-12.113642, -77.040507, 3.6711165048543695], [-12.1153256, -77.0332091, 2.989482200647249], [-12.113475, -77.027247, 3.5985257101761956], [-12.117261, -77.045922, 3.1947815533980584], [-12.126223, -77.017232, 3.463592233009709]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 16,
+  "radius": 9,
+  "blur": 10,
+  "gradient": {
+  0.2: "blue",
+  0.4: "lime",
+  0.6: "orange",
+  1.0: "red",
+},
+}
+            );
+        
+    
+            heat_map_e6ec33a754bc8b3af3d219b3bb5f508c.addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+            var circle_marker_3aac33a28d30647d644e1cdc1761f93e = L.circleMarker(
+                [-12.1190126, -77.039928],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.568654646324548, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_d409a298c3fb6e063c2223c9a7b12342 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41d07da441f7ad96198e1085f0e41796 = $(`<div id="html_41d07da441f7ad96198e1085f0e41796" style="width: 100.0%; height: 100.0%;"><b>18027 Ov. Julio Ramón Riveyro - Av. Pardo</b><br>Ocup prom: 0.45<br>Demand (1-occ): 0.55</div>`)[0];
+                popup_d409a298c3fb6e063c2223c9a7b12342.setContent(html_41d07da441f7ad96198e1085f0e41796);
+            
+        
+
+        circle_marker_3aac33a28d30647d644e1cdc1761f93e.bindPopup(popup_d409a298c3fb6e063c2223c9a7b12342)
+        ;
+
+        
+    
+    
+            var circle_marker_e00db190b6680182d6513ed531f58890 = L.circleMarker(
+                [-12.122125, -77.011506],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.347087378640778, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_aad449845d2e71794b1758ba4dc407fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8dcac48596c170a6dec5214ba5e12316 = $(`<div id="html_8dcac48596c170a6dec5214ba5e12316" style="width: 100.0%; height: 100.0%;"><b>18009 Ca. Luis Schereiber Cdra. 2 (C.C. Aurora)</b><br>Ocup prom: 0.30<br>Demand (1-occ): 0.70</div>`)[0];
+                popup_aad449845d2e71794b1758ba4dc407fe.setContent(html_8dcac48596c170a6dec5214ba5e12316);
+            
+        
+
+        circle_marker_e00db190b6680182d6513ed531f58890.bindPopup(popup_aad449845d2e71794b1758ba4dc407fe)
+        ;
+
+        
+    
+    
+            var circle_marker_5b05a8b752cca1bbc3ae417b12cc0173 = L.circleMarker(
+                [-12.123368, -77.035637],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.589459084604716, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_62f0d8abeb3511bb5c962b12a865f03e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc1ef65f666d0f37740ff65bd31635d3 = $(`<div id="html_dc1ef65f666d0f37740ff65bd31635d3" style="width: 100.0%; height: 100.0%;"><b>18024 Ov. Bolognesi - Ca. Madrid</b><br>Ocup prom: 0.37<br>Demand (1-occ): 0.63</div>`)[0];
+                popup_62f0d8abeb3511bb5c962b12a865f03e.setContent(html_dc1ef65f666d0f37740ff65bd31635d3);
+            
+        
+
+        circle_marker_5b05a8b752cca1bbc3ae417b12cc0173.bindPopup(popup_62f0d8abeb3511bb5c962b12a865f03e)
+        ;
+
+        
+    
+    
+            var circle_marker_454c74e608d0f7349df81a25034e4d37 = L.circleMarker(
+                [-12.1250365, -77.0373073],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.78883495145631, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_f430d4a66278258c6e08cb6750654bf2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94cb72cd6b61b75ffbfd1af97c0976ed = $(`<div id="html_94cb72cd6b61b75ffbfd1af97c0976ed" style="width: 100.0%; height: 100.0%;"><b>18047 Malecón Cisneros - Ca. Trípoli</b><br>Ocup prom: 0.35<br>Demand (1-occ): 0.65</div>`)[0];
+                popup_f430d4a66278258c6e08cb6750654bf2.setContent(html_94cb72cd6b61b75ffbfd1af97c0976ed);
+            
+        
+
+        circle_marker_454c74e608d0f7349df81a25034e4d37.bindPopup(popup_f430d4a66278258c6e08cb6750654bf2)
+        ;
+
+        
+    
+    
+            var circle_marker_7979fd31db56a42fd0a535035c4ffa66 = L.circleMarker(
+                [-12.118497, -77.045048],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.394174757281554, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_699a23fa1ac3defb06da11075298f17b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0e3758a22b8f55a108d2b7e9c261834 = $(`<div id="html_e0e3758a22b8f55a108d2b7e9c261834" style="width: 100.0%; height: 100.0%;"><b>18026 Malecón de la Marina - Parque Grau</b><br>Ocup prom: 0.38<br>Demand (1-occ): 0.62</div>`)[0];
+                popup_699a23fa1ac3defb06da11075298f17b.setContent(html_e0e3758a22b8f55a108d2b7e9c261834);
+            
+        
+
+        circle_marker_7979fd31db56a42fd0a535035c4ffa66.bindPopup(popup_699a23fa1ac3defb06da11075298f17b)
+        ;
+
+        
+    
+    
+            var circle_marker_ae763cfcb321d89e57fdc15dde3a4d8c = L.circleMarker(
+                [-12.1283328, -77.0353586],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.796116504854368, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_2e4abea881aae89a106d01bfa4642ca0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f10beda527936ab77df53b84599393cb = $(`<div id="html_f10beda527936ab77df53b84599393cb" style="width: 100.0%; height: 100.0%;"><b>18022 Malecón de la Reserva - Malecón 28 de Julio</b><br>Ocup prom: 0.35<br>Demand (1-occ): 0.65</div>`)[0];
+                popup_2e4abea881aae89a106d01bfa4642ca0.setContent(html_f10beda527936ab77df53b84599393cb);
+            
+        
+
+        circle_marker_ae763cfcb321d89e57fdc15dde3a4d8c.bindPopup(popup_2e4abea881aae89a106d01bfa4642ca0)
+        ;
+
+        
+    
+    
+            var circle_marker_cc37ca192c75a4a65345571f51321046 = L.circleMarker(
+                [-12.103375, -77.029535],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.009708737864077, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_d6a044c09407b077ff7c8861368b8269 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac051b3aff195a7497acead95ef3b758 = $(`<div id="html_ac051b3aff195a7497acead95ef3b758" style="width: 100.0%; height: 100.0%;"><b>18034 Ca. Tacna - Av. A. Aramburú</b><br>Ocup prom: 0.42<br>Demand (1-occ): 0.58</div>`)[0];
+                popup_d6a044c09407b077ff7c8861368b8269.setContent(html_ac051b3aff195a7497acead95ef3b758);
+            
+        
+
+        circle_marker_cc37ca192c75a4a65345571f51321046.bindPopup(popup_d6a044c09407b077ff7c8861368b8269)
+        ;
+
+        
+    
+    
+            var circle_marker_8ee81751012a10cf6bb52caf7e1ae881 = L.circleMarker(
+                [-12.13176, -77.02971],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.090152565880722, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_616e346c86a0b4004136c8ab2b08eac3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8dc199db7bbe9f657af35ef25bb3c533 = $(`<div id="html_8dc199db7bbe9f657af35ef25bb3c533" style="width: 100.0%; height: 100.0%;"><b>18021 Av. Armendariz -Av. Larco (Larcomar)</b><br>Ocup prom: 0.66<br>Demand (1-occ): 0.34</div>`)[0];
+                popup_616e346c86a0b4004136c8ab2b08eac3.setContent(html_8dc199db7bbe9f657af35ef25bb3c533);
+            
+        
+
+        circle_marker_8ee81751012a10cf6bb52caf7e1ae881.bindPopup(popup_616e346c86a0b4004136c8ab2b08eac3)
+        ;
+
+        
+    
+    
+            var circle_marker_35d922d6b597f21f13feae07a23361bd = L.circleMarker(
+                [-12.1295502, -77.0241593],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.040776699029127, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_4cdba6849e4bdfaed194ab23a9873531 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67e5fef8c840e2c90b2a114877a9a759 = $(`<div id="html_67e5fef8c840e2c90b2a114877a9a759" style="width: 100.0%; height: 100.0%;"><b>18018 Av. Nuñez de Balboa - Av. Reducto</b><br>Ocup prom: 0.33<br>Demand (1-occ): 0.67</div>`)[0];
+                popup_4cdba6849e4bdfaed194ab23a9873531.setContent(html_67e5fef8c840e2c90b2a114877a9a759);
+            
+        
+
+        circle_marker_35d922d6b597f21f13feae07a23361bd.bindPopup(popup_4cdba6849e4bdfaed194ab23a9873531)
+        ;
+
+        
+    
+    
+            var circle_marker_be7155bd7a00b801c7495d0a5f320d75 = L.circleMarker(
+                [-12.1278816, -77.0294289],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.95388349514563, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_90f977830226dc1399cba2b85af7576f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67c4a6906c485a162e2c6184b5ccfe4c = $(`<div id="html_67c4a6906c485a162e2c6184b5ccfe4c" style="width: 100.0%; height: 100.0%;"><b>18016 Ca. Manco Capac - Av. Larco</b><br>Ocup prom: 0.42<br>Demand (1-occ): 0.58</div>`)[0];
+                popup_90f977830226dc1399cba2b85af7576f.setContent(html_67c4a6906c485a162e2c6184b5ccfe4c);
+            
+        
+
+        circle_marker_be7155bd7a00b801c7495d0a5f320d75.bindPopup(popup_90f977830226dc1399cba2b85af7576f)
+        ;
+
+        
+    
+    
+            var circle_marker_471261c6c6af1ee29e85c127844be5c6 = L.circleMarker(
+                [-12.1197331, -77.0290916],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.570873786407768, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_aa3e418ccab4fee13016bca945e5299c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa44922b78f8ee440a252cf5ffbaf0b8 = $(`<div id="html_fa44922b78f8ee440a252cf5ffbaf0b8" style="width: 100.0%; height: 100.0%;"><b>18002 Ca. Oscar R. Benavides - Ov. Miraflores (Parque Kennedy)</b><br>Ocup prom: 0.37<br>Demand (1-occ): 0.63</div>`)[0];
+                popup_aa3e418ccab4fee13016bca945e5299c.setContent(html_fa44922b78f8ee440a252cf5ffbaf0b8);
+            
+        
+
+        circle_marker_471261c6c6af1ee29e85c127844be5c6.bindPopup(popup_aa3e418ccab4fee13016bca945e5299c)
+        ;
+
+        
+    
+    
+            var circle_marker_5b3dabe1879741058aff73c7a9872f21 = L.circleMarker(
+                [-12.1107703, -77.0494],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.393203883495145, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_f43cca9201f0a5130bd135fa939262d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fef6c79b7d92a867bc0c9d59e777e976 = $(`<div id="html_fef6c79b7d92a867bc0c9d59e777e976" style="width: 100.0%; height: 100.0%;"><b>18043 Ca. Mariano Melgar - Ca. Gral. Mendiburu</b><br>Ocup prom: 0.38<br>Demand (1-occ): 0.62</div>`)[0];
+                popup_f43cca9201f0a5130bd135fa939262d3.setContent(html_fef6c79b7d92a867bc0c9d59e777e976);
+            
+        
+
+        circle_marker_5b3dabe1879741058aff73c7a9872f21.bindPopup(popup_f43cca9201f0a5130bd135fa939262d3)
+        ;
+
+        
+    
+    
+            var circle_marker_f0899cbfabcf5238d4b252b709578c4c = L.circleMarker(
+                [-12.122464, -77.031208],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.394174757281554, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_9b268ecbfbc215b4593a217efd7a4007 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c253fa8451855ea098f69b584073a236 = $(`<div id="html_c253fa8451855ea098f69b584073a236" style="width: 100.0%; height: 100.0%;"><b>18001 Ca. Oscar R. Benavides - Ca. Schell (Parque Kennedy)</b><br>Ocup prom: 0.47<br>Demand (1-occ): 0.53</div>`)[0];
+                popup_9b268ecbfbc215b4593a217efd7a4007.setContent(html_c253fa8451855ea098f69b584073a236);
+            
+        
+
+        circle_marker_f0899cbfabcf5238d4b252b709578c4c.bindPopup(popup_9b268ecbfbc215b4593a217efd7a4007)
+        ;
+
+        
+    
+    
+            var circle_marker_fdafddf8bbb6886cb36d9deeeeb78995 = L.circleMarker(
+                [-12.1220145, -77.0246459],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.262135922330096, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_3d83cb4bdff6e99bece5dee47413cb8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3afd2815eff4b73aa4d375a3d2b77d28 = $(`<div id="html_3afd2815eff4b73aa4d375a3d2b77d28" style="width: 100.0%; height: 100.0%;"><b>18004 Av. Ernesto Diez Canseco - Av. Paseo de la República</b><br>Ocup prom: 0.31<br>Demand (1-occ): 0.69</div>`)[0];
+                popup_3d83cb4bdff6e99bece5dee47413cb8b.setContent(html_3afd2815eff4b73aa4d375a3d2b77d28);
+            
+        
+
+        circle_marker_fdafddf8bbb6886cb36d9deeeeb78995.bindPopup(popup_3d83cb4bdff6e99bece5dee47413cb8b)
+        ;
+
+        
+    
+    
+            var circle_marker_d63761d31594eb69427c5a2fa095fa9a = L.circleMarker(
+                [-12.110583, -77.036259],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.601941747572816, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_73cd0964e56823443bd82be962d53d09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cc2befaaf3562f4d665a19d658f519e = $(`<div id="html_4cc2befaaf3562f4d665a19d658f519e" style="width: 100.0%; height: 100.0%;"><b>18039 Psje. Juana Alarco De Dammert - Ov. Gutierrez</b><br>Ocup prom: 0.28<br>Demand (1-occ): 0.72</div>`)[0];
+                popup_73cd0964e56823443bd82be962d53d09.setContent(html_4cc2befaaf3562f4d665a19d658f519e);
+            
+        
+
+        circle_marker_d63761d31594eb69427c5a2fa095fa9a.bindPopup(popup_73cd0964e56823443bd82be962d53d09)
+        ;
+
+        
+    
+    
+            var circle_marker_53d8003f2e54eff8b1dfbda6707e525d = L.circleMarker(
+                [-12.113541, -77.049135],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.233009708737864, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_2425f8d9f7990f099e101a2b79e9b1c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f335043e25082ad34b7e956d23f78c1b = $(`<div id="html_f335043e25082ad34b7e956d23f78c1b" style="width: 100.0%; height: 100.0%;"><b>18045 Malecón de la Marina - Av. Federico Villarreal</b><br>Ocup prom: 0.40<br>Demand (1-occ): 0.60</div>`)[0];
+                popup_2425f8d9f7990f099e101a2b79e9b1c0.setContent(html_f335043e25082ad34b7e956d23f78c1b);
+            
+        
+
+        circle_marker_53d8003f2e54eff8b1dfbda6707e525d.bindPopup(popup_2425f8d9f7990f099e101a2b79e9b1c0)
+        ;
+
+        
+    
+    
+            var circle_marker_2fda8f8b427a93eaa4c9266fe7f6e4ab = L.circleMarker(
+                [-12.127469, -77.011515],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.446601941747574, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_15d58de397b05d753613dcd6255275a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0dc308d3aaaa0b5fa904f8c0027d270d = $(`<div id="html_0dc308d3aaaa0b5fa904f8c0027d270d" style="width: 100.0%; height: 100.0%;"><b>18010 Ca. Placencia - Av. Benavides</b><br>Ocup prom: 0.38<br>Demand (1-occ): 0.62</div>`)[0];
+                popup_15d58de397b05d753613dcd6255275a5.setContent(html_0dc308d3aaaa0b5fa904f8c0027d270d);
+            
+        
+
+        circle_marker_2fda8f8b427a93eaa4c9266fe7f6e4ab.bindPopup(popup_15d58de397b05d753613dcd6255275a5)
+        ;
+
+        
+    
+    
+            var circle_marker_4cdb34571dc846d40134a11db4d4bb18 = L.circleMarker(
+                [-12.0914467, -77.0190921],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_9fdc7c6ec55a14598e6cabf94b1ab10c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2cd98d58139cf6551e2a2a803d37cc4c = $(`<div id="html_2cd98d58139cf6551e2a2a803d37cc4c" style="width: 100.0%; height: 100.0%;"><b>27042 Av. P. Carriquiry - Av. Ricardo Angulo</b><br>Ocup prom: 0.00<br>Demand (1-occ): 1.00</div>`)[0];
+                popup_9fdc7c6ec55a14598e6cabf94b1ab10c.setContent(html_2cd98d58139cf6551e2a2a803d37cc4c);
+            
+        
+
+        circle_marker_4cdb34571dc846d40134a11db4d4bb18.bindPopup(popup_9fdc7c6ec55a14598e6cabf94b1ab10c)
+        ;
+
+        
+    
+    
+            var circle_marker_3735b1a80bd2da05f0093fc97c0368af = L.circleMarker(
+                [-12.108822, -77.030403],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.245145631067961, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_75141b91fb6d0ff5d557809cc1650f10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39d273462b728ffc95ef2387539e0d69 = $(`<div id="html_39d273462b728ffc95ef2387539e0d69" style="width: 100.0%; height: 100.0%;"><b>18036 Ca. Carlos Tenaud - Av. Arequipa</b><br>Ocup prom: 0.31<br>Demand (1-occ): 0.69</div>`)[0];
+                popup_75141b91fb6d0ff5d557809cc1650f10.setContent(html_39d273462b728ffc95ef2387539e0d69);
+            
+        
+
+        circle_marker_3735b1a80bd2da05f0093fc97c0368af.bindPopup(popup_75141b91fb6d0ff5d557809cc1650f10)
+        ;
+
+        
+    
+    
+            var circle_marker_e67b22edde44cfd87e21bb75da9b8db8 = L.circleMarker(
+                [-12.1232664, -77.0268261],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.846601941747572, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_26dc276c45a43d3b3ae3e840e1bd4a12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65607484c76c989e8525afbc848f4140 = $(`<div id="html_65607484c76c989e8525afbc848f4140" style="width: 100.0%; height: 100.0%;"><b>18007 Ca. Schell - Av. La Paz</b><br>Ocup prom: 0.26<br>Demand (1-occ): 0.74</div>`)[0];
+                popup_26dc276c45a43d3b3ae3e840e1bd4a12.setContent(html_65607484c76c989e8525afbc848f4140);
+            
+        
+
+        circle_marker_e67b22edde44cfd87e21bb75da9b8db8.bindPopup(popup_26dc276c45a43d3b3ae3e840e1bd4a12)
+        ;
+
+        
+    
+    
+            var circle_marker_7dbaba5464f0361992f2d35a9515adfc = L.circleMarker(
+                [-12.116439, -77.037294],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.546925566343042, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_3b0be5b83083beeebc9e2ae73ccb657d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_359496a60cb46409b05872020847f2d2 = $(`<div id="html_359496a60cb46409b05872020847f2d2" style="width: 100.0%; height: 100.0%;"><b>18040 Ca. Torre Tagle - Parque Piura</b><br>Ocup prom: 0.29<br>Demand (1-occ): 0.71</div>`)[0];
+                popup_3b0be5b83083beeebc9e2ae73ccb657d.setContent(html_359496a60cb46409b05872020847f2d2);
+            
+        
+
+        circle_marker_7dbaba5464f0361992f2d35a9515adfc.bindPopup(popup_3b0be5b83083beeebc9e2ae73ccb657d)
+        ;
+
+        
+    
+    
+            var circle_marker_d5238b3af096fafc329766edb5a114e6 = L.circleMarker(
+                [-12.107284, -77.028261],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.79611650485437, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_7920af1a6489a7445e0f17343ec2ed9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f26d25ab9064df3a946a46d27fa0067 = $(`<div id="html_2f26d25ab9064df3a946a46d27fa0067" style="width: 100.0%; height: 100.0%;"><b>18033 Ca. Scipión Llona Cdra.3</b><br>Ocup prom: 0.27<br>Demand (1-occ): 0.73</div>`)[0];
+                popup_7920af1a6489a7445e0f17343ec2ed9c.setContent(html_2f26d25ab9064df3a946a46d27fa0067);
+            
+        
+
+        circle_marker_d5238b3af096fafc329766edb5a114e6.bindPopup(popup_7920af1a6489a7445e0f17343ec2ed9c)
+        ;
+
+        
+    
+    
+            var circle_marker_9e7f6f886db215500ce6a5efbb4ba18d = L.circleMarker(
+                [-12.110498, -77.044991],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.743411927877947, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_8f8d647d3883f0f7f9887aa607ccd6cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35ba43e95911c210104b00fa16990be5 = $(`<div id="html_35ba43e95911c210104b00fa16990be5" style="width: 100.0%; height: 100.0%;"><b>18037 Av. Angamos Oeste - Parque Naciones Unidas</b><br>Ocup prom: 0.27<br>Demand (1-occ): 0.73</div>`)[0];
+                popup_8f8d647d3883f0f7f9887aa607ccd6cf.setContent(html_35ba43e95911c210104b00fa16990be5);
+            
+        
+
+        circle_marker_9e7f6f886db215500ce6a5efbb4ba18d.bindPopup(popup_8f8d647d3883f0f7f9887aa607ccd6cf)
+        ;
+
+        
+    
+    
+            var circle_marker_4cdfca10af1c2a75a0d8a6e442c3dfc4 = L.circleMarker(
+                [-12.119361, -77.026758],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.37864077669903, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_edb63fa49467043c4826b053149a0723 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d43fe56956390db87b95850b31e3dd2 = $(`<div id="html_4d43fe56956390db87b95850b31e3dd2" style="width: 100.0%; height: 100.0%;"><b>18003 Av.Ricardo Palma - Av. La Paz</b><br>Ocup prom: 0.39<br>Demand (1-occ): 0.61</div>`)[0];
+                popup_edb63fa49467043c4826b053149a0723.setContent(html_4d43fe56956390db87b95850b31e3dd2);
+            
+        
+
+        circle_marker_4cdfca10af1c2a75a0d8a6e442c3dfc4.bindPopup(popup_edb63fa49467043c4826b053149a0723)
+        ;
+
+        
+    
+    
+            var circle_marker_e3e731bf5292904a9e7154e9d9878906 = L.circleMarker(
+                [-12.1289245, -77.0269035],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.702912621359221, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_eb3b66e931d9b8edda5838a653a4b43d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08227078b332eb8b34a4904fe9804de7 = $(`<div id="html_08227078b332eb8b34a4904fe9804de7" style="width: 100.0%; height: 100.0%;"><b>18017 Ca. Manco Capac - Av. La Paz</b><br>Ocup prom: 0.44<br>Demand (1-occ): 0.56</div>`)[0];
+                popup_eb3b66e931d9b8edda5838a653a4b43d.setContent(html_08227078b332eb8b34a4904fe9804de7);
+            
+        
+
+        circle_marker_e3e731bf5292904a9e7154e9d9878906.bindPopup(popup_eb3b66e931d9b8edda5838a653a4b43d)
+        ;
+
+        
+    
+    
+            var circle_marker_56cb8ec34b498e81c7a10bdeac230e48 = L.circleMarker(
+                [-12.133867, -77.028311],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.393203883495145, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_f387750e1aad1f693a27c4c5745c596a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3456a7e24a0ab372d82a4898dabce23c = $(`<div id="html_3456a7e24a0ab372d82a4898dabce23c" style="width: 100.0%; height: 100.0%;"><b>18020 Mlcn. De la Reserva - Av. N. de Balboa (Parque Domodossola)</b><br>Ocup prom: 0.55<br>Demand (1-occ): 0.45</div>`)[0];
+                popup_f387750e1aad1f693a27c4c5745c596a.setContent(html_3456a7e24a0ab372d82a4898dabce23c);
+            
+        
+
+        circle_marker_56cb8ec34b498e81c7a10bdeac230e48.bindPopup(popup_f387750e1aad1f693a27c4c5745c596a)
+        ;
+
+        
+    
+    
+            var circle_marker_42af96f8f58e72eb4fba4e3fba2cacaa = L.circleMarker(
+                [-12.11928, -77.03687],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.998058252427183, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_901199ec709e96964ac1a126223baeaf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed88de5088c729f76f1bc8d92e23b09a = $(`<div id="html_ed88de5088c729f76f1bc8d92e23b09a" style="width: 100.0%; height: 100.0%;"><b>18028 Av. Jorge Chávez - Av. Jose Pardo</b><br>Ocup prom: 0.42<br>Demand (1-occ): 0.58</div>`)[0];
+                popup_901199ec709e96964ac1a126223baeaf.setContent(html_ed88de5088c729f76f1bc8d92e23b09a);
+            
+        
+
+        circle_marker_42af96f8f58e72eb4fba4e3fba2cacaa.bindPopup(popup_901199ec709e96964ac1a126223baeaf)
+        ;
+
+        
+    
+    
+            var circle_marker_2afd5c89d376b648d710c84dbc0596ba = L.circleMarker(
+                [-12.111647, -77.033347],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.366990291262137, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_a985715db0f3489d4644204660cdfeb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4fcf52c80bedc38a2bd3b99268492727 = $(`<div id="html_4fcf52c80bedc38a2bd3b99268492727" style="width: 100.0%; height: 100.0%;"><b>18038 Ca. Gral. Borgoño - Ca. Ayacucho</b><br>Ocup prom: 0.22<br>Demand (1-occ): 0.78</div>`)[0];
+                popup_a985715db0f3489d4644204660cdfeb9.setContent(html_4fcf52c80bedc38a2bd3b99268492727);
+            
+        
+
+        circle_marker_2afd5c89d376b648d710c84dbc0596ba.bindPopup(popup_a985715db0f3489d4644204660cdfeb9)
+        ;
+
+        
+    
+    
+            var circle_marker_49c0365c3157dd7f97c4b858b51311c8 = L.circleMarker(
+                [-12.12378, -77.033694],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.409153952843273, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_51d1551d8588e15d9aad75d4b283c8a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5083afef41389b68e3741e3efb8c413 = $(`<div id="html_c5083afef41389b68e3741e3efb8c413" style="width: 100.0%; height: 100.0%;"><b>18023 Ca.BellavistaCdra.5</b><br>Ocup prom: 0.55<br>Demand (1-occ): 0.45</div>`)[0];
+                popup_51d1551d8588e15d9aad75d4b283c8a2.setContent(html_c5083afef41389b68e3741e3efb8c413);
+            
+        
+
+        circle_marker_49c0365c3157dd7f97c4b858b51311c8.bindPopup(popup_51d1551d8588e15d9aad75d4b283c8a2)
+        ;
+
+        
+    
+    
+            var circle_marker_958af76d28a9ecf88762ad961cc9fd2d = L.circleMarker(
+                [-12.135091, -77.024853],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.710679611650486, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_a6680d5435b248175c92fb76dd8bb004 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d9ab268b3c35f651e538c56deefad31 = $(`<div id="html_4d9ab268b3c35f651e538c56deefad31" style="width: 100.0%; height: 100.0%;"><b>18019 Boulevard Armendariz - Av. La Paz</b><br>Ocup prom: 0.69<br>Demand (1-occ): 0.31</div>`)[0];
+                popup_a6680d5435b248175c92fb76dd8bb004.setContent(html_4d9ab268b3c35f651e538c56deefad31);
+            
+        
+
+        circle_marker_958af76d28a9ecf88762ad961cc9fd2d.bindPopup(popup_a6680d5435b248175c92fb76dd8bb004)
+        ;
+
+        
+    
+    
+            var circle_marker_fa04524b0cdb27f503a920d30c1b40b3 = L.circleMarker(
+                [-12.12225, -77.020597],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.363106796116504, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_230b684748ba62b3a9875a5d95a72bd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff63fe43863349e2664b241831335eec = $(`<div id="html_ff63fe43863349e2664b241831335eec" style="width: 100.0%; height: 100.0%;"><b>18005 Av. Ricardo Palma - Av. Roca y Boloña ( Pq. Las Tradiciones)</b><br>Ocup prom: 0.39<br>Demand (1-occ): 0.61</div>`)[0];
+                popup_230b684748ba62b3a9875a5d95a72bd4.setContent(html_ff63fe43863349e2664b241831335eec);
+            
+        
+
+        circle_marker_fa04524b0cdb27f503a920d30c1b40b3.bindPopup(popup_230b684748ba62b3a9875a5d95a72bd4)
+        ;
+
+        
+    
+    
+            var circle_marker_0c7abc8f4e8c322ff12e7a4824655fb2 = L.circleMarker(
+                [-12.1305704, -77.0195018],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.980582524271845, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_c6bfac7b961106a5a50d2b5b8d7dcc3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_800f3d2ad77b3544a2173764f955a027 = $(`<div id="html_800f3d2ad77b3544a2173764f955a027" style="width: 100.0%; height: 100.0%;"><b>18013 Ca. Tejada - Av. 28 de Julio</b><br>Ocup prom: 0.67<br>Demand (1-occ): 0.33</div>`)[0];
+                popup_c6bfac7b961106a5a50d2b5b8d7dcc3a.setContent(html_800f3d2ad77b3544a2173764f955a027);
+            
+        
+
+        circle_marker_0c7abc8f4e8c322ff12e7a4824655fb2.bindPopup(popup_c6bfac7b961106a5a50d2b5b8d7dcc3a)
+        ;
+
+        
+    
+    
+            var circle_marker_54712aa1b3be2af6d01d01e278bb5947 = L.circleMarker(
+                [-12.119232, -77.033696],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.021574973031283, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_4df5814592622fa51fc0259be1bdbbde = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a5a23b77933f4a7cd62d8136893c0de = $(`<div id="html_4a5a23b77933f4a7cd62d8136893c0de" style="width: 100.0%; height: 100.0%;"><b>18029 Ca. Gral. Recavarren - Av. José Pardo</b><br>Ocup prom: 0.33<br>Demand (1-occ): 0.67</div>`)[0];
+                popup_4df5814592622fa51fc0259be1bdbbde.setContent(html_4a5a23b77933f4a7cd62d8136893c0de);
+            
+        
+
+        circle_marker_54712aa1b3be2af6d01d01e278bb5947.bindPopup(popup_4df5814592622fa51fc0259be1bdbbde)
+        ;
+
+        
+    
+    
+            var circle_marker_158f6e253d655e28b42dde69e9d83134 = L.circleMarker(
+                [-12.111361, -77.051797],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.843042071197411, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_58eb0f565e8984a5a2f6275175145399 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15599a8cc72b4c053441db957153977b = $(`<div id="html_15599a8cc72b4c053441db957153977b" style="width: 100.0%; height: 100.0%;"><b>18044 Estadio Manuel Bonilla - Malecón de la Marina</b><br>Ocup prom: 0.68<br>Demand (1-occ): 0.32</div>`)[0];
+                popup_58eb0f565e8984a5a2f6275175145399.setContent(html_15599a8cc72b4c053441db957153977b);
+            
+        
+
+        circle_marker_158f6e253d655e28b42dde69e9d83134.bindPopup(popup_58eb0f565e8984a5a2f6275175145399)
+        ;
+
+        
+    
+    
+            var circle_marker_a18402975fba97df2b75e7c67d408656 = L.circleMarker(
+                [-12.113362, -77.0457856],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.513176144244106, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_e6603209238a9fea69fb24bd4f009569 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b79773efdbec36ee0f545681c7c8f88d = $(`<div id="html_b79773efdbec36ee0f545681c7c8f88d" style="width: 100.0%; height: 100.0%;"><b>18049 Ca. Ignacio Merino - Av. La Mar</b><br>Ocup prom: 0.62<br>Demand (1-occ): 0.38</div>`)[0];
+                popup_e6603209238a9fea69fb24bd4f009569.setContent(html_b79773efdbec36ee0f545681c7c8f88d);
+            
+        
+
+        circle_marker_a18402975fba97df2b75e7c67d408656.bindPopup(popup_e6603209238a9fea69fb24bd4f009569)
+        ;
+
+        
+    
+    
+            var circle_marker_71ecabffa1f55b5a009a6926cb3e9a79 = L.circleMarker(
+                [-12.116391, -77.026614],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.936036550542546, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_4559c85f0811a980526e2a0ee66b2d38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f50a279e360f400cb138f8fac6890e4e = $(`<div id="html_f50a279e360f400cb138f8fac6890e4e" style="width: 100.0%; height: 100.0%;"><b>18031 Ca. Gonzales Prada - Av. Paseo de la República  (Parque Miranda)</b><br>Ocup prom: 0.34<br>Demand (1-occ): 0.66</div>`)[0];
+                popup_4559c85f0811a980526e2a0ee66b2d38.setContent(html_f50a279e360f400cb138f8fac6890e4e);
+            
+        
+
+        circle_marker_71ecabffa1f55b5a009a6926cb3e9a79.bindPopup(popup_4559c85f0811a980526e2a0ee66b2d38)
+        ;
+
+        
+    
+    
+            var circle_marker_6cba07dcccabb9ca7991962537bd9878 = L.circleMarker(
+                [-12.114198, -77.038894],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.401294498381876, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_e6aee92ab686786eb36899f911b551f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4c961d44f3e9986975faacc56f94fea = $(`<div id="html_f4c961d44f3e9986975faacc56f94fea" style="width: 100.0%; height: 100.0%;"><b>18041 Ca. Gral. Varela - Av. Angamos Oeste</b><br>Ocup prom: 0.30<br>Demand (1-occ): 0.70</div>`)[0];
+                popup_e6aee92ab686786eb36899f911b551f6.setContent(html_f4c961d44f3e9986975faacc56f94fea);
+            
+        
+
+        circle_marker_6cba07dcccabb9ca7991962537bd9878.bindPopup(popup_e6aee92ab686786eb36899f911b551f6)
+        ;
+
+        
+    
+    
+            var circle_marker_dc04a18a8eea47c646f2264bf61f5b71 = L.circleMarker(
+                [-12.1135528, -77.0310859],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.941747572815533, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_aee5d60960cb7977587e3ddcfa03c136 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d283a8b1ebdcdf21ba0a780d0b5b199 = $(`<div id="html_3d283a8b1ebdcdf21ba0a780d0b5b199" style="width: 100.0%; height: 100.0%;"><b>18030 Ca. Atahualpa Cdra.6 (Parque Bonilla)</b><br>Ocup prom: 0.42<br>Demand (1-occ): 0.58</div>`)[0];
+                popup_aee5d60960cb7977587e3ddcfa03c136.setContent(html_3d283a8b1ebdcdf21ba0a780d0b5b199);
+            
+        
+
+        circle_marker_dc04a18a8eea47c646f2264bf61f5b71.bindPopup(popup_aee5d60960cb7977587e3ddcfa03c136)
+        ;
+
+        
+    
+    
+            var circle_marker_693936fba5fd095bd4da4e6f303c6b07 = L.circleMarker(
+                [-12.1219288, -77.018143],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.43495145631068, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_350feebbed3ce60138c6b404d89f2720 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa60cfdad89208efcb9841a65c9537a9 = $(`<div id="html_aa60cfdad89208efcb9841a65c9537a9" style="width: 100.0%; height: 100.0%;"><b>18006 Av. Rep. de Panamá - Av. Gran Mcal. Ramón Castilla</b><br>Ocup prom: 0.46<br>Demand (1-occ): 0.54</div>`)[0];
+                popup_350feebbed3ce60138c6b404d89f2720.setContent(html_aa60cfdad89208efcb9841a65c9537a9);
+            
+        
+
+        circle_marker_693936fba5fd095bd4da4e6f303c6b07.bindPopup(popup_350feebbed3ce60138c6b404d89f2720)
+        ;
+
+        
+    
+    
+            var circle_marker_ba0e1ed5f4c6a8582c9836e6cb79e128 = L.circleMarker(
+                [-12.1258495, -77.0219643],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.5, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_c6eb725fb74a1b6aa4cf3d6d4749687e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3629ec64e4cf37793236026adbad129f = $(`<div id="html_3629ec64e4cf37793236026adbad129f" style="width: 100.0%; height: 100.0%;"><b>18014 Ca. Ramon Ribeyro - Av. Benavides</b><br>Ocup prom: 0.29<br>Demand (1-occ): 0.71</div>`)[0];
+                popup_c6eb725fb74a1b6aa4cf3d6d4749687e.setContent(html_3629ec64e4cf37793236026adbad129f);
+            
+        
+
+        circle_marker_ba0e1ed5f4c6a8582c9836e6cb79e128.bindPopup(popup_c6eb725fb74a1b6aa4cf3d6d4749687e)
+        ;
+
+        
+    
+    
+            var circle_marker_d2997c2079b75d086771c4fd07396f22 = L.circleMarker(
+                [-12.1193071, -77.015962],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.1445523193096, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_1751289d013247bb10d217dfe5c89c5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b42ca8dad0be11c0d9a9ca41c39f67b3 = $(`<div id="html_b42ca8dad0be11c0d9a9ca41c39f67b3" style="width: 100.0%; height: 100.0%;"><b>18008 Ca.Lola Pardo - Ca. Mayor Arce de Oliva</b><br>Ocup prom: 0.32<br>Demand (1-occ): 0.68</div>`)[0];
+                popup_1751289d013247bb10d217dfe5c89c5c.setContent(html_b42ca8dad0be11c0d9a9ca41c39f67b3);
+            
+        
+
+        circle_marker_d2997c2079b75d086771c4fd07396f22.bindPopup(popup_1751289d013247bb10d217dfe5c89c5c)
+        ;
+
+        
+    
+    
+            var circle_marker_b78ef54f221c15da275c6308867106fa = L.circleMarker(
+                [-12.1170034, -77.042041],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.890429958391124, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_b3867e75b3643a3b9d202aabd27afecf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_219aafd6fd4b1d41297087537d2acca6 = $(`<div id="html_219aafd6fd4b1d41297087537d2acca6" style="width: 100.0%; height: 100.0%;"><b>18048 Av. Mariscal La Mar - Av. Santa Cruz</b><br>Ocup prom: 0.59<br>Demand (1-occ): 0.41</div>`)[0];
+                popup_b3867e75b3643a3b9d202aabd27afecf.setContent(html_219aafd6fd4b1d41297087537d2acca6);
+            
+        
+
+        circle_marker_b78ef54f221c15da275c6308867106fa.bindPopup(popup_b3867e75b3643a3b9d202aabd27afecf)
+        ;
+
+        
+    
+    
+            var circle_marker_ee4f97862df783b34c71b77789847b67 = L.circleMarker(
+                [-12.126933, -77.0092536],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.332524271844661, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_b71d22c5f9696f88af4bccf80c7d788e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07bcced5036f0cf00caaa7de3203384f = $(`<div id="html_07bcced5036f0cf00caaa7de3203384f" style="width: 100.0%; height: 100.0%;"><b>18011 Ca. GermánA.Goméz - Av.JoseR.Gastón</b><br>Ocup prom: 0.72<br>Demand (1-occ): 0.28</div>`)[0];
+                popup_b71d22c5f9696f88af4bccf80c7d788e.setContent(html_07bcced5036f0cf00caaa7de3203384f);
+            
+        
+
+        circle_marker_ee4f97862df783b34c71b77789847b67.bindPopup(popup_b71d22c5f9696f88af4bccf80c7d788e)
+        ;
+
+        
+    
+    
+            var circle_marker_3efb9b34f34fe8cbde6014165c27128b = L.circleMarker(
+                [-12.1231563, -77.0397424],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.18640776699029, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_9824deeb24d6ebbc19b98887b0173768 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee454b806f524b32edca0e7e8fc9efe3 = $(`<div id="html_ee454b806f524b32edca0e7e8fc9efe3" style="width: 100.0%; height: 100.0%;"><b>18025 Malecón Cisneros - (Parque del Faro La Marina)</b><br>Ocup prom: 0.40<br>Demand (1-occ): 0.60</div>`)[0];
+                popup_9824deeb24d6ebbc19b98887b0173768.setContent(html_ee454b806f524b32edca0e7e8fc9efe3);
+            
+        
+
+        circle_marker_3efb9b34f34fe8cbde6014165c27128b.bindPopup(popup_9824deeb24d6ebbc19b98887b0173768)
+        ;
+
+        
+    
+    
+            var circle_marker_f0a091c6b182e179ed410b6f19514eb3 = L.circleMarker(
+                [-12.105838, -77.033209],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.281553398058252, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_d37da2d901710e6d93ace7686238c0d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e444424800f0cf65df87e29ff983479 = $(`<div id="html_8e444424800f0cf65df87e29ff983479" style="width: 100.0%; height: 100.0%;"><b>18035 Ca. Santander - Av. Santa Cruz</b><br>Ocup prom: 0.39<br>Demand (1-occ): 0.61</div>`)[0];
+                popup_d37da2d901710e6d93ace7686238c0d4.setContent(html_8e444424800f0cf65df87e29ff983479);
+            
+        
+
+        circle_marker_f0a091c6b182e179ed410b6f19514eb3.bindPopup(popup_d37da2d901710e6d93ace7686238c0d4)
+        ;
+
+        
+    
+    
+            var circle_marker_17197527b93ce442a0552105ff52a24b = L.circleMarker(
+                [-12.1257284, -77.02794],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.006472491909385, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_93fec8c68ccc25ef070bfb7af279e9cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efc008f7f41d94796f4500dc33713d50 = $(`<div id="html_efc008f7f41d94796f4500dc33713d50" style="width: 100.0%; height: 100.0%;"><b>18015 Ca. Bolivar - Ca. Alcanfores</b><br>Ocup prom: 0.33<br>Demand (1-occ): 0.67</div>`)[0];
+                popup_93fec8c68ccc25ef070bfb7af279e9cc.setContent(html_efc008f7f41d94796f4500dc33713d50);
+            
+        
+
+        circle_marker_17197527b93ce442a0552105ff52a24b.bindPopup(popup_93fec8c68ccc25ef070bfb7af279e9cc)
+        ;
+
+        
+    
+    
+            var circle_marker_8e3ccedfc2edce9759d99755e77847b4 = L.circleMarker(
+                [-12.113642, -77.040507],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.810679611650485, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_45867cf243cb12df32c59dca92128f19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_641e4582d4ba3ae5beddbb3b15bf53ba = $(`<div id="html_641e4582d4ba3ae5beddbb3b15bf53ba" style="width: 100.0%; height: 100.0%;"><b>18042 Ca. Retiro - Av. Angamos Oeste</b><br>Ocup prom: 0.27<br>Demand (1-occ): 0.73</div>`)[0];
+                popup_45867cf243cb12df32c59dca92128f19.setContent(html_641e4582d4ba3ae5beddbb3b15bf53ba);
+            
+        
+
+        circle_marker_8e3ccedfc2edce9759d99755e77847b4.bindPopup(popup_45867cf243cb12df32c59dca92128f19)
+        ;
+
+        
+    
+    
+            var circle_marker_8efb0e0aba6fc2e2df6a082db173f059 = L.circleMarker(
+                [-12.1153256, -77.0332091],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.174757281553397, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_20cc429a5bcfd9015e97c09a35a5cf18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98a8cec5d2e439d3a83dea20ddd5e711 = $(`<div id="html_98a8cec5d2e439d3a83dea20ddd5e711" style="width: 100.0%; height: 100.0%;"><b>18050 Ca. Gral. Borgoño - Parque Manuel Solari</b><br>Ocup prom: 0.40<br>Demand (1-occ): 0.60</div>`)[0];
+                popup_20cc429a5bcfd9015e97c09a35a5cf18.setContent(html_98a8cec5d2e439d3a83dea20ddd5e711);
+            
+        
+
+        circle_marker_8efb0e0aba6fc2e2df6a082db173f059.bindPopup(popup_20cc429a5bcfd9015e97c09a35a5cf18)
+        ;
+
+        
+    
+    
+            var circle_marker_c11bd3bc5b921fcc668a74e16d26fa5c = L.circleMarker(
+                [-12.113475, -77.027247],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.63646170442287, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_a61dfb483be71ea83de7f19e882c34e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7cdf014c56c7df0371232adc0a8962b4 = $(`<div id="html_7cdf014c56c7df0371232adc0a8962b4" style="width: 100.0%; height: 100.0%;"><b>18032 Ca. Gral. Suarez - Av .Angamos Oeste</b><br>Ocup prom: 0.28<br>Demand (1-occ): 0.72</div>`)[0];
+                popup_a61dfb483be71ea83de7f19e882c34e4.setContent(html_7cdf014c56c7df0371232adc0a8962b4);
+            
+        
+
+        circle_marker_c11bd3bc5b921fcc668a74e16d26fa5c.bindPopup(popup_a61dfb483be71ea83de7f19e882c34e4)
+        ;
+
+        
+    
+    
+            var circle_marker_ce2442e700634906349c8871a4f8c2f7 = L.circleMarker(
+                [-12.117261, -77.045922],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.66747572815534, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_f34425d06b4559779bd631f23d1b089e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c798683e00dc68e52f7c8fdf88676ac7 = $(`<div id="html_c798683e00dc68e52f7c8fdf88676ac7" style="width: 100.0%; height: 100.0%;"><b>18046 Malecón de la Marina - Skate Park</b><br>Ocup prom: 0.36<br>Demand (1-occ): 0.64</div>`)[0];
+                popup_f34425d06b4559779bd631f23d1b089e.setContent(html_c798683e00dc68e52f7c8fdf88676ac7);
+            
+        
+
+        circle_marker_ce2442e700634906349c8871a4f8c2f7.bindPopup(popup_f34425d06b4559779bd631f23d1b089e)
+        ;
+
+        
+    
+    
+            var circle_marker_5c515cbd2e82cc251d14ce743a1628a7 = L.circleMarker(
+                [-12.126223, -77.017232],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.312621359223302, "stroke": true, "weight": 3}
+            ).addTo(map_bb1c4ae407db1eb2dcd4045826f4b63f);
+        
+    
+        var popup_d2cf321d37598330ba4ad6d207801762 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73039e0ae728e3e8b831f9ce80ddd0e4 = $(`<div id="html_73039e0ae728e3e8b831f9ce80ddd0e4" style="width: 100.0%; height: 100.0%;"><b>18012 Ca. Ignacio La Puente - Av. Benavides</b><br>Ocup prom: 0.31<br>Demand (1-occ): 0.69</div>`)[0];
+                popup_d2cf321d37598330ba4ad6d207801762.setContent(html_73039e0ae728e3e8b831f9ce80ddd0e4);
+            
+        
+
+        circle_marker_5c515cbd2e82cc251d14ce743a1628a7.bindPopup(popup_d2cf321d37598330ba4ad6d207801762)
+        ;
+
+        
+    
+</script>
+</html>

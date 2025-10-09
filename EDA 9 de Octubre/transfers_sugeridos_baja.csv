@@ -1,0 +1,28 @@
+from_id,from_name,to_id,to_name,bikes,distance_km
+0927eccbf04e2aadd179595c55c52bbe,18047 Malecón Cisneros - Ca. Trípoli,06dd87a8b87232577015b1c9a4ba08ed,18024 Ov. Bolognesi - Ca. Madrid,4,0.2596043799161717
+bb40d8da8fed6afda3b2ff8f0c59e48d,18048 Av. Mariscal La Mar - Av. Santa Cruz,e14ff39be43b5e75c56b2be2606d3a3e,18042 Ca. Retiro - Av. Angamos Oeste,3,0.40928963408990954
+55c0bf37006a2c06875866c6e9e13156,18039 Psje. Juana Alarco De Dammert - Ov. Gutierrez,e14ff39be43b5e75c56b2be2606d3a3e,18042 Ca. Retiro - Av. Angamos Oeste,1,0.5735815666597116
+c00d815ca6322144c5510d9f9e7121da,18011 Ca. GermánA.Goméz - Av.JoseR.Gastón,03367da30caea302b11c838d8b98df55,18009 Ca. Luis Schereiber Cdra. 2 (C.C. Aurora),4,0.5880346635291228
+7445571ff483b34f2e41c478e6d83588,18020 Mlcn. De la Reserva - Av. N. de Balboa (Parque Domodossola),3c8e489aaccbcbbe87f59457fe1901d1,18016 Ca. Manco Capac - Av. Larco,4,0.6765507754767955
+409c57fe8f27975938e2e0248a4d45bc,18002 Ca. Oscar R. Benavides - Ov. Miraflores (Parque Kennedy),a08754c736d95b13253dc6e7ab0a84bf,18031 Ca. Gonzales Prada - Av. Paseo de la República  (Parque Miranda),4,0.45897536109809295
+aea4af9a353483a0761b042ca8758636,18030 Ca. Atahualpa Cdra.6 (Parque Bonilla),eb0b102f9e9bb933d2194064e70496ad,18032 Ca. Gral. Suarez - Av .Angamos Oeste,4,0.4174511500741075
+55c0bf37006a2c06875866c6e9e13156,18039 Psje. Juana Alarco De Dammert - Ov. Gutierrez,758f33f3320ac4a7aca286cf7e57bef4,18038 Ca. Gral. Borgoño - Ca. Ayacucho,4,0.33797708326261544
+7445571ff483b34f2e41c478e6d83588,18020 Mlcn. De la Reserva - Av. N. de Balboa (Parque Domodossola),263e9a1c4f245c4070f8c85b88d0f10d,18021 Av. Armendariz -Av. Larco (Larcomar),4,0.27932268788790815
+409c57fe8f27975938e2e0248a4d45bc,18002 Ca. Oscar R. Benavides - Ov. Miraflores (Parque Kennedy),263e9a1c4f245c4070f8c85b88d0f10d,18021 Av. Armendariz -Av. Larco (Larcomar),1,1.339019021657869
+409c57fe8f27975938e2e0248a4d45bc,18002 Ca. Oscar R. Benavides - Ov. Miraflores (Parque Kennedy),6cc6c7fa220969e769d6ade973d20fc4,18003 Av.Ricardo Palma - Av. La Paz,1,0.2570528008639735
+e8c7678be73f7c2febaadc3366c822ac,18050 Ca. Gral. Borgoño - Parque Manuel Solari,6cc6c7fa220969e769d6ade973d20fc4,18003 Av.Ricardo Palma - Av. La Paz,3,0.832606805684341
+008a35afc6b4060be57b48bf90bec44c,18027 Ov. Julio Ramón Riveyro - Av. Pardo,9b481ef2d05f69c2b56ac04ac189cc8d,18049 Ca. Ignacio Merino - Av. La Mar,2,0.8946123370885742
+55c0bf37006a2c06875866c6e9e13156,18039 Psje. Juana Alarco De Dammert - Ov. Gutierrez,6b34990c05dc96c8251a0a369cb69401,18037 Av. Angamos Oeste - Parque Naciones Unidas,1,0.9493922315056836
+008a35afc6b4060be57b48bf90bec44c,18027 Ov. Julio Ramón Riveyro - Av. Pardo,6b34990c05dc96c8251a0a369cb69401,18037 Av. Angamos Oeste - Parque Naciones Unidas,2,1.0951617585970819
+757937ea9bcfaefaef0a20a336c024cf,18028 Av. Jorge Chávez - Av. Jose Pardo,73f1bdfa0b91640c04cf7d4d17ec9bd7,18017 Ca. Manco Capac - Av. La Paz,2,1.5244891509821494
+757937ea9bcfaefaef0a20a336c024cf,18028 Av. Jorge Chávez - Av. Jose Pardo,dc710115aa6014501e5b457a0b14ef25,18015 Ca. Bolivar - Ca. Alcanfores,2,1.2069128559651952
+c00d815ca6322144c5510d9f9e7121da,18011 Ca. GermánA.Goméz - Av.JoseR.Gastón,88a9e07a36d29cb5801f82cedd2534b4,18013 Ca. Tejada - Av. 28 de Julio,1,1.1852556909861198
+e8c7678be73f7c2febaadc3366c822ac,18050 Ca. Gral. Borgoño - Parque Manuel Solari,439e3845a612d6b0a61506b0ebe52a91,18004 Av. Ernesto Diez Canseco - Av. Paseo de la República,1,1.191592196676523
+757937ea9bcfaefaef0a20a336c024cf,18028 Av. Jorge Chávez - Av. Jose Pardo,1ff7b00c8a2af2eeb129df70939eb20b,18034 Ca. Tacna - Av. A. Aramburú,1,1.9400338559023298
+c07eaacbff9bf0e1bc77ee5fd3b14bb9,18025 Malecón Cisneros - (Parque del Faro La Marina),edd8ff1ca69c234b86958ec42e3dd651,18046 Malecón de la Marina - Skate Park,1,0.9386494426476476
+757937ea9bcfaefaef0a20a336c024cf,18028 Av. Jorge Chávez - Av. Jose Pardo,6483875f7b7770a47a79c18bb17bc54e,18036 Ca. Carlos Tenaud - Av. Arequipa,1,1.358900210675288
+757937ea9bcfaefaef0a20a336c024cf,18028 Av. Jorge Chávez - Av. Jose Pardo,696787ac674aad03dc56a790f1f9e6ed,18033 Ca. Scipión Llona Cdra.3,1,1.6295093774630063
+c00d815ca6322144c5510d9f9e7121da,18011 Ca. GermánA.Goméz - Av.JoseR.Gastón,b167c074941be5e72c84b015140b95ae,18008 Ca.Lola Pardo - Ca. Mayor Arce de Oliva,1,1.1184469585156571
+757937ea9bcfaefaef0a20a336c024cf,18028 Av. Jorge Chávez - Av. Jose Pardo,87d95a956d801c0953b6169325661979,18005 Av. Ricardo Palma - Av. Roca y Boloña ( Pq. Las Tradiciones),1,1.7996970044163088
+c07eaacbff9bf0e1bc77ee5fd3b14bb9,18025 Malecón Cisneros - (Parque del Faro La Marina),66ba95532fd0758049c624f5a08d8e4d,18007 Ca. Schell - Av. La Paz,1,1.4042500037315646
+c07eaacbff9bf0e1bc77ee5fd3b14bb9,18025 Malecón Cisneros - (Parque del Faro La Marina),eff5bc44fad7421819820f56aa6ded68,18012 Ca. Ignacio La Puente - Av. Benavides,1,2.4708503495347043
