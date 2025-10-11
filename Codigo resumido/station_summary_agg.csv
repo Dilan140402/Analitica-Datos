@@ -1,0 +1,52 @@
+﻿id_estacion,nombre_estacion,obs,bicis_promedio,capacidad_promedio,ocupacion_promedio,pct_vacia,pct_llena,hora_pico,categoria_ocupacion_promedio
+008a35afc6b4060be57b48bf90bec44c,18027 Ov. Julio Ramón Riveyro - Av. Pardo,393,6.254,14.0,0.447,0.763,0.0,3,Media
+03367da30caea302b11c838d8b98df55,18009 Ca. Luis Schereiber Cdra. 2 (C.C. Aurora),393,4.74,16.0,0.296,0.763,0.0,21,Baja
+06dd87a8b87232577015b1c9a4ba08ed,18024 Ov. Bolognesi - Ca. Madrid,393,5.008,14.0,0.358,3.053,0.0,16,Media
+0927eccbf04e2aadd179595c55c52bbe,18047 Malecón Cisneros - Ca. Trípoli,393,6.033,16.0,0.377,0.254,0.0,13,Media
+0ac132eb1a147b7b23a753185cbebd1d,18026 Malecón de la Marina - Parque Grau,393,7.679,20.0,0.384,1.527,0.254,7,Media
+11c5d99df877943158c7e7c693242e26,18022 Malecón de la Reserva - Malecón 28 de Julio,393,8.336,20.0,0.417,1.018,0.0,11,Media
+1ff7b00c8a2af2eeb129df70939eb20b,18034 Ca. Tacna - Av. A. Aramburú,393,6.257,16.0,0.391,1.781,0.0,13,Media
+263e9a1c4f245c4070f8c85b88d0f10d,18021 Av. Armendariz -Av. Larco (Larcomar),393,16.298,28.0,0.582,0.0,0.763,21,Media
+3ab2451c995f47035d2b14590753236a,18018 Av. Nuñez de Balboa - Av. Reducto,393,7.746,20.0,0.387,2.036,0.0,10,Media
+3c8e489aaccbcbbe87f59457fe1901d1,18016 Ca. Manco Capac - Av. Larco,393,6.387,16.0,0.399,0.0,0.0,12,Media
+409c57fe8f27975938e2e0248a4d45bc,18002 Ca. Oscar R. Benavides - Ov. Miraflores (Parque Kennedy),393,7.107,20.0,0.355,3.817,0.0,20,Media
+4158a25459abe328f8ab8c32c0db7b6b,18043 Ca. Mariano Melgar - Ca. Gral. Mendiburu,393,6.646,16.0,0.415,0.254,0.0,21,Media
+438d63a7c5cb69db70e9cd6665120d61,18001 Ca. Oscar R. Benavides - Ca. Schell (Parque Kennedy),393,10.219,20.0,0.511,0.0,1.018,21,Media
+439e3845a612d6b0a61506b0ebe52a91,18004 Av. Ernesto Diez Canseco - Av. Paseo de la República,393,3.847,12.0,0.321,1.272,0.0,21,Baja
+55c0bf37006a2c06875866c6e9e13156,18039 Psje. Juana Alarco De Dammert - Ov. Gutierrez,393,6.356,18.0,0.353,0.254,0.0,15,Media
+57ded81c72e11e6fc644698ee200d750,18045 Malecón de la Marina - Av. Federico Villarreal,393,7.799,20.0,0.39,0.509,0.0,8,Media
+5b7914e3a19e2d392967c8ff9a1eeb5e,18010 Ca. Placencia - Av. Benavides,393,6.252,16.0,0.391,0.0,0.0,3,Media
+6369e20f974a82f599ac39793a9ceeef,27042 Av. P. Carriquiry - Av. Ricardo Angulo,38,0.0,16.0,0.0,100.0,0.0,0,Baja
+6483875f7b7770a47a79c18bb17bc54e,18036 Ca. Carlos Tenaud - Av. Arequipa,393,4.995,16.0,0.312,1.527,0.0,1,Baja
+66ba95532fd0758049c624f5a08d8e4d,18007 Ca. Schell - Av. La Paz,393,5.822,20.0,0.291,0.0,0.0,14,Baja
+6769076dbc301448af071082f5822f8c,18040 Ca. Torre Tagle - Parque Piura,393,4.234,12.0,0.353,0.254,0.0,0,Media
+696787ac674aad03dc56a790f1f9e6ed,18033 Ca. Scipión Llona Cdra.3,393,4.26,16.0,0.266,0.254,0.0,1,Baja
+6b34990c05dc96c8251a0a369cb69401,18037 Av. Angamos Oeste - Parque Naciones Unidas,393,7.163,28.0,0.256,0.254,0.0,11,Baja
+6cc6c7fa220969e769d6ade973d20fc4,18003 Av.Ricardo Palma - Av. La Paz,393,8.379,24.0,0.349,0.254,0.0,1,Baja
+73f1bdfa0b91640c04cf7d4d17ec9bd7,18017 Ca. Manco Capac - Av. La Paz,393,9.031,20.0,0.452,0.0,0.0,9,Media
+7445571ff483b34f2e41c478e6d83588,18020 Mlcn. De la Reserva - Av. N. de Balboa (Parque Domodossola),393,13.705,24.0,0.571,0.0,0.0,10,Media
+757937ea9bcfaefaef0a20a336c024cf,18028 Av. Jorge Chávez - Av. Jose Pardo,393,9.628,20.0,0.481,0.0,0.0,10,Media
+758f33f3320ac4a7aca286cf7e57bef4,18038 Ca. Gral. Borgoño - Ca. Ayacucho,393,4.539,20.0,0.227,0.254,0.0,13,Baja
+8301c7ecad3d99b5e04f03b87ffb8af4,18023 Ca.BellavistaCdra.5,393,7.913,14.0,0.565,0.0,0.0,8,Media
+876923a9839232b31d01c19a6af87e6f,18019 Boulevard Armendariz - Av. La Paz,393,13.646,20.0,0.682,0.0,2.799,21,Alta
+87d95a956d801c0953b6169325661979,18005 Av. Ricardo Palma - Av. Roca y Boloña ( Pq. Las Tradiciones),393,7.081,20.0,0.354,0.0,0.0,8,Media
+88a9e07a36d29cb5801f82cedd2534b4,18013 Ca. Tejada - Av. 28 de Julio,393,6.878,12.0,0.573,0.0,0.0,13,Media
+92f82729a1aa0e98e16bac393ddaf91b,18029 Ca. Gral. Recavarren - Av. José Pardo,393,6.786,18.0,0.377,0.254,0.0,9,Media
+9652d392478ec6d31cb23d0a2d22aa30,18044 Estadio Manuel Bonilla - Malecón de la Marina,393,15.219,24.0,0.634,1.018,5.598,13,Media
+9b481ef2d05f69c2b56ac04ac189cc8d,18049 Ca. Ignacio Merino - Av. La Mar,393,7.664,14.0,0.547,0.0,0.509,18,Media
+a08754c736d95b13253dc6e7ab0a84bf,18031 Ca. Gonzales Prada - Av. Paseo de la República  (Parque Miranda),393,5.122,17.0,0.301,2.799,0.0,8,Baja
+a1c5bf0bc5ddcdb928871fbb97e89ada,18041 Ca. Gral. Varela - Av. Angamos Oeste,393,3.529,12.0,0.294,4.835,0.0,21,Baja
+aea4af9a353483a0761b042ca8758636,18030 Ca. Atahualpa Cdra.6 (Parque Bonilla),393,6.725,16.0,0.42,0.254,0.0,8,Media
+aeddcf808d428c290c0d523999b4a298,18006 Av. Rep. de Panamá - Av. Gran Mcal. Ramón Castilla,393,8.835,20.0,0.442,0.254,0.0,3,Media
+b01138adb0102e1f6862bb8ba54b9721,18014 Ca. Ramon Ribeyro - Av. Benavides,393,7.893,24.0,0.329,0.0,0.0,10,Baja
+b167c074941be5e72c84b015140b95ae,18008 Ca.Lola Pardo - Ca. Mayor Arce de Oliva,393,5.438,18.0,0.302,7.634,0.0,4,Baja
+bb40d8da8fed6afda3b2ff8f0c59e48d,18048 Av. Mariscal La Mar - Av. Santa Cruz,393,8.756,14.0,0.625,0.0,1.018,7,Media
+c00d815ca6322144c5510d9f9e7121da,18011 Ca. GermánA.Goméz - Av.JoseR.Gastón,393,10.756,16.0,0.672,0.0,0.254,4,Alta
+c07eaacbff9bf0e1bc77ee5fd3b14bb9,18025 Malecón Cisneros - (Parque del Faro La Marina),393,8.855,20.0,0.443,0.509,0.0,14,Media
+c87a72c82867fcd9f59503de195895b3,18035 Ca. Santander - Av. Santa Cruz,393,4.514,12.0,0.376,1.272,0.0,11,Media
+dc710115aa6014501e5b457a0b14ef25,18015 Ca. Bolivar - Ca. Alcanfores,393,7.667,24.0,0.319,0.0,0.0,13,Baja
+e14ff39be43b5e75c56b2be2606d3a3e,18042 Ca. Retiro - Av. Angamos Oeste,393,3.84,16.0,0.24,0.509,0.0,1,Baja
+e8c7678be73f7c2febaadc3366c822ac,18050 Ca. Gral. Borgoño - Parque Manuel Solari,393,4.883,12.0,0.407,0.0,0.0,21,Media
+eb0b102f9e9bb933d2194064e70496ad,18032 Ca. Gral. Suarez - Av .Angamos Oeste,393,4.944,18.0,0.275,0.763,0.0,11,Baja
+edd8ff1ca69c234b86958ec42e3dd651,18046 Malecón de la Marina - Skate Park,393,5.356,16.0,0.335,1.018,0.0,21,Baja
+eff5bc44fad7421819820f56aa6ded68,18012 Ca. Ignacio La Puente - Av. Benavides,393,5.616,20.0,0.281,0.509,0.0,3,Baja
