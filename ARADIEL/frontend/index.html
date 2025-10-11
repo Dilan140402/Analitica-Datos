@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  
+  <meta charset="UTF-8" />
+  <title>CityBike Lima - Reabastecimiento</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+  <!-- ✅ Control de sesión -->
+  <script>
+    // Si no está logueado, redirige al login
+    if (!localStorage.getItem('loggedIn')) {
+      window.location.href = '/login';
+    }
+  </script>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>CityBike Lima - Monitoreo de Estaciones</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+  <style>
+    /* ==== Panel lateral de alertas ==== */
+    #alerts {
+      position: absolute;
+      top: 100px;
+      right: 10px;
+      background: rgba(255,255,255,0.95);
+      padding: 10px;
+      border-radius: 8px;
+      width: 300px;
+      max-height: 400px;
+      overflow-y: auto;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+    #alerts h3 {
+      margin-top: 0;
+      color: #0077cc;
+      text-align: center;
+    }
+    #alerts ul {
+      list-style: none;
+      padding: 0;
+    }
+    #alerts li {
+      margin: 6px 0;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+    }
+    #alerts button {
+      margin-top: 4px;
+      background: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 5px 8px;
+      cursor: pointer;
+    }
+    #alerts button:hover {
+      background: #005fa3;
+    }
+
+    /* ==== Mapa ==== */
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body class="map-page">
+  <!-- Si no hay sesión, redirige al login -->
+  <script>
+    if (!localStorage.getItem('loggedIn')) {
+      window.location.href = '/login';
+    }
+  </script>
+
+  <h1>🚴 CityBike Lima - Monitoreo de Estaciones</h1>
+
+  <!-- Contenedor del mapa -->
+  <div id="map"></div>
+
+  <!-- Panel lateral para estaciones críticas -->
+  <div id="alerts">
+    <h3>⚠️ Estaciones con pocas bicicletas</h3>
+    <ul id="low-list"></ul>
+  </div>
+
+  <!-- Archivo de lógica principal -->
+</body>
+</html>
+
+</head>
+
+<body class="map-page">
+  <h1>🚴 CityBike Lima - Monitoreo de Estaciones</h1>
+  <div id="map"></div>
+
+  <div id="alerts-bottom">
+    <h3>⚠️ Estaciones con pocas bicicletas</h3>
+    <ul id="low-list"></ul>
+    <button id="redistribute-btn">Iniciar Reabastecimiento</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
