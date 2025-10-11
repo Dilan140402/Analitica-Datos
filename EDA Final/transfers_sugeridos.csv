@@ -1,0 +1,5 @@
+from_id,from_name,from_category,to_id,to_name,to_category,bikes,distance_km
+6769076dbc301448af071082f5822f8c,18040 Ca. Torre Tagle - Parque Piura,Alta,6b34990c05dc96c8251a0a369cb69401,18037 Av. Angamos Oeste - Parque Naciones Unidas,Baja,3,1.0661408108208723
+438d63a7c5cb69db70e9cd6665120d61,18001 Ca. Oscar R. Benavides - Ca. Schell (Parque Kennedy),Alta,6b34990c05dc96c8251a0a369cb69401,18037 Av. Angamos Oeste - Parque Naciones Unidas,Baja,6,2.0039365416922137
+876923a9839232b31d01c19a6af87e6f,18019 Boulevard Armendariz - Av. La Paz,Alta,6b34990c05dc96c8251a0a369cb69401,18037 Av. Angamos Oeste - Parque Naciones Unidas,Baja,2,3.503026930003736
+876923a9839232b31d01c19a6af87e6f,18019 Boulevard Armendariz - Av. La Paz,Alta,eff5bc44fad7421819820f56aa6ded68,18012 Ca. Ignacio La Puente - Av. Benavides,Baja,4,1.2879247827061828

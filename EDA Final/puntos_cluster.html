@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9308ddfdb17fb37eb141f64233e5a538 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9308ddfdb17fb37eb141f64233e5a538" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9308ddfdb17fb37eb141f64233e5a538 = L.map(
+                "map_9308ddfdb17fb37eb141f64233e5a538",
+                {
+                    center: [-12.119727236000001, -77.03135455800002],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_484a9b7c079a4987d8586da5c08ddecc = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_484a9b7c079a4987d8586da5c08ddecc.addTo(map_9308ddfdb17fb37eb141f64233e5a538);
+        
+    
+            var marker_cluster_2e74265189b63ff76ee85c710ba70ebe = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_78cb37300a91c0323dca17c7380bf9a0 = L.circleMarker(
+                [-12.1190126, -77.039928],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_84af71939fcdc852e4b01f26fbe34761 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a6713c63fb973822dd6a5a99c7ad817 = $(`<div id="html_5a6713c63fb973822dd6a5a99c7ad817" style="width: 100.0%; height: 100.0%;"><b>18027 Ov. Julio Ramón Riveyro - Av. Pardo</b><br>Ocupación promedio: 0.45</div>`)[0];
+                popup_84af71939fcdc852e4b01f26fbe34761.setContent(html_5a6713c63fb973822dd6a5a99c7ad817);
+            
+        
+
+        circle_marker_78cb37300a91c0323dca17c7380bf9a0.bindPopup(popup_84af71939fcdc852e4b01f26fbe34761)
+        ;
+
+        
+    
+    
+            var circle_marker_2ddccb2368ac8abe3661ef1c3b61d0e5 = L.circleMarker(
+                [-12.122125, -77.011506],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_666b670c503cb7c1293d98dcb0a8c745 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc75c45d42f1a5f59bc931635d081a29 = $(`<div id="html_fc75c45d42f1a5f59bc931635d081a29" style="width: 100.0%; height: 100.0%;"><b>18009 Ca. Luis Schereiber Cdra. 2 (C.C. Aurora)</b><br>Ocupación promedio: 0.30</div>`)[0];
+                popup_666b670c503cb7c1293d98dcb0a8c745.setContent(html_fc75c45d42f1a5f59bc931635d081a29);
+            
+        
+
+        circle_marker_2ddccb2368ac8abe3661ef1c3b61d0e5.bindPopup(popup_666b670c503cb7c1293d98dcb0a8c745)
+        ;
+
+        
+    
+    
+            var circle_marker_1d8254daf5785475946b17a33ab8cb3b = L.circleMarker(
+                [-12.123368, -77.035637],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_801d93acb8c4f0dabfe1ecf6dff8fea4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b59d5abd44154a576eefa1d6dbd7c521 = $(`<div id="html_b59d5abd44154a576eefa1d6dbd7c521" style="width: 100.0%; height: 100.0%;"><b>18024 Ov. Bolognesi - Ca. Madrid</b><br>Ocupación promedio: 0.36</div>`)[0];
+                popup_801d93acb8c4f0dabfe1ecf6dff8fea4.setContent(html_b59d5abd44154a576eefa1d6dbd7c521);
+            
+        
+
+        circle_marker_1d8254daf5785475946b17a33ab8cb3b.bindPopup(popup_801d93acb8c4f0dabfe1ecf6dff8fea4)
+        ;
+
+        
+    
+    
+            var circle_marker_f1ad756caf5875cef6a94c2e66daeffe = L.circleMarker(
+                [-12.1250365, -77.0373073],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_089e39a3a5e859c294a41c13a0cca142 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b3ec73d9a3b76c1d2b23a9076aa33e9 = $(`<div id="html_5b3ec73d9a3b76c1d2b23a9076aa33e9" style="width: 100.0%; height: 100.0%;"><b>18047 Malecón Cisneros - Ca. Trípoli</b><br>Ocupación promedio: 0.38</div>`)[0];
+                popup_089e39a3a5e859c294a41c13a0cca142.setContent(html_5b3ec73d9a3b76c1d2b23a9076aa33e9);
+            
+        
+
+        circle_marker_f1ad756caf5875cef6a94c2e66daeffe.bindPopup(popup_089e39a3a5e859c294a41c13a0cca142)
+        ;
+
+        
+    
+    
+            var circle_marker_85bad75c431d7f48f31110ca7cf4b181 = L.circleMarker(
+                [-12.118497, -77.045048],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_17fe6269c09e30f70129e4c6d2eb2df6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1127b0a5077a9d2033419bffcdedb698 = $(`<div id="html_1127b0a5077a9d2033419bffcdedb698" style="width: 100.0%; height: 100.0%;"><b>18026 Malecón de la Marina - Parque Grau</b><br>Ocupación promedio: 0.38</div>`)[0];
+                popup_17fe6269c09e30f70129e4c6d2eb2df6.setContent(html_1127b0a5077a9d2033419bffcdedb698);
+            
+        
+
+        circle_marker_85bad75c431d7f48f31110ca7cf4b181.bindPopup(popup_17fe6269c09e30f70129e4c6d2eb2df6)
+        ;
+
+        
+    
+    
+            var circle_marker_d1a0fa008540e4980bf993b4273baf44 = L.circleMarker(
+                [-12.1283328, -77.0353586],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_bd66b9d93f72c1c59818fe7dbd436206 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05a025c8b8c40f7d61f540d607626d1e = $(`<div id="html_05a025c8b8c40f7d61f540d607626d1e" style="width: 100.0%; height: 100.0%;"><b>18022 Malecón de la Reserva - Malecón 28 de Julio</b><br>Ocupación promedio: 0.42</div>`)[0];
+                popup_bd66b9d93f72c1c59818fe7dbd436206.setContent(html_05a025c8b8c40f7d61f540d607626d1e);
+            
+        
+
+        circle_marker_d1a0fa008540e4980bf993b4273baf44.bindPopup(popup_bd66b9d93f72c1c59818fe7dbd436206)
+        ;
+
+        
+    
+    
+            var circle_marker_a21a730d031b2a888d1482435756599c = L.circleMarker(
+                [-12.103375, -77.029535],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_43db5c97961106e986bcab4b2335b155 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc7eebec1586ec336c94de01de08c30b = $(`<div id="html_fc7eebec1586ec336c94de01de08c30b" style="width: 100.0%; height: 100.0%;"><b>18034 Ca. Tacna - Av. A. Aramburú</b><br>Ocupación promedio: 0.39</div>`)[0];
+                popup_43db5c97961106e986bcab4b2335b155.setContent(html_fc7eebec1586ec336c94de01de08c30b);
+            
+        
+
+        circle_marker_a21a730d031b2a888d1482435756599c.bindPopup(popup_43db5c97961106e986bcab4b2335b155)
+        ;
+
+        
+    
+    
+            var circle_marker_b5df19e73edb70f3fec063bf9718c465 = L.circleMarker(
+                [-12.13176, -77.02971],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_ac88bfdf5157f2aee32150a4bf2952f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51fc5872c81f679827f0bf8ef4312189 = $(`<div id="html_51fc5872c81f679827f0bf8ef4312189" style="width: 100.0%; height: 100.0%;"><b>18021 Av. Armendariz -Av. Larco (Larcomar)</b><br>Ocupación promedio: 0.58</div>`)[0];
+                popup_ac88bfdf5157f2aee32150a4bf2952f6.setContent(html_51fc5872c81f679827f0bf8ef4312189);
+            
+        
+
+        circle_marker_b5df19e73edb70f3fec063bf9718c465.bindPopup(popup_ac88bfdf5157f2aee32150a4bf2952f6)
+        ;
+
+        
+    
+    
+            var circle_marker_7ff5eb96082b873219be7da43792c840 = L.circleMarker(
+                [-12.1295502, -77.0241593],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_e6e8cd923b4c85f9041e0c8237681709 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c8d04aa477c86316917aa4df32396cd = $(`<div id="html_0c8d04aa477c86316917aa4df32396cd" style="width: 100.0%; height: 100.0%;"><b>18018 Av. Nuñez de Balboa - Av. Reducto</b><br>Ocupación promedio: 0.39</div>`)[0];
+                popup_e6e8cd923b4c85f9041e0c8237681709.setContent(html_0c8d04aa477c86316917aa4df32396cd);
+            
+        
+
+        circle_marker_7ff5eb96082b873219be7da43792c840.bindPopup(popup_e6e8cd923b4c85f9041e0c8237681709)
+        ;
+
+        
+    
+    
+            var circle_marker_194b23d9b9cc813ba63148e7111bc471 = L.circleMarker(
+                [-12.1278816, -77.0294289],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_e5a0459ab09c42d1ff2c6f0c6b2f4300 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8bdde3d5ba5ba03637ef9aa362f7af84 = $(`<div id="html_8bdde3d5ba5ba03637ef9aa362f7af84" style="width: 100.0%; height: 100.0%;"><b>18016 Ca. Manco Capac - Av. Larco</b><br>Ocupación promedio: 0.40</div>`)[0];
+                popup_e5a0459ab09c42d1ff2c6f0c6b2f4300.setContent(html_8bdde3d5ba5ba03637ef9aa362f7af84);
+            
+        
+
+        circle_marker_194b23d9b9cc813ba63148e7111bc471.bindPopup(popup_e5a0459ab09c42d1ff2c6f0c6b2f4300)
+        ;
+
+        
+    
+    
+            var circle_marker_0feee8ac879fb19d79017d9a49d6dfdc = L.circleMarker(
+                [-12.1197331, -77.0290916],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_c263f8b6598eb116aed1f06d721fd9e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe525e2aad269a3806cd022696cc35fe = $(`<div id="html_fe525e2aad269a3806cd022696cc35fe" style="width: 100.0%; height: 100.0%;"><b>18002 Ca. Oscar R. Benavides - Ov. Miraflores (Parque Kennedy)</b><br>Ocupación promedio: 0.36</div>`)[0];
+                popup_c263f8b6598eb116aed1f06d721fd9e4.setContent(html_fe525e2aad269a3806cd022696cc35fe);
+            
+        
+
+        circle_marker_0feee8ac879fb19d79017d9a49d6dfdc.bindPopup(popup_c263f8b6598eb116aed1f06d721fd9e4)
+        ;
+
+        
+    
+    
+            var circle_marker_6e48b76663c10d6096a00b0d4f773e3e = L.circleMarker(
+                [-12.1107703, -77.0494],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_bb0fe1bd4d66d11c2e597a703196de98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4eb204e1e4fa9c69dfe9bccbfd9ccd9 = $(`<div id="html_b4eb204e1e4fa9c69dfe9bccbfd9ccd9" style="width: 100.0%; height: 100.0%;"><b>18043 Ca. Mariano Melgar - Ca. Gral. Mendiburu</b><br>Ocupación promedio: 0.42</div>`)[0];
+                popup_bb0fe1bd4d66d11c2e597a703196de98.setContent(html_b4eb204e1e4fa9c69dfe9bccbfd9ccd9);
+            
+        
+
+        circle_marker_6e48b76663c10d6096a00b0d4f773e3e.bindPopup(popup_bb0fe1bd4d66d11c2e597a703196de98)
+        ;
+
+        
+    
+    
+            var circle_marker_93da80f97672f43d95b1aa778386c5c8 = L.circleMarker(
+                [-12.122464, -77.031208],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_55840213886abbc57315db13e02a4364 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_467db6b8e48ff3f944753fa41ae85e1d = $(`<div id="html_467db6b8e48ff3f944753fa41ae85e1d" style="width: 100.0%; height: 100.0%;"><b>18001 Ca. Oscar R. Benavides - Ca. Schell (Parque Kennedy)</b><br>Ocupación promedio: 0.51</div>`)[0];
+                popup_55840213886abbc57315db13e02a4364.setContent(html_467db6b8e48ff3f944753fa41ae85e1d);
+            
+        
+
+        circle_marker_93da80f97672f43d95b1aa778386c5c8.bindPopup(popup_55840213886abbc57315db13e02a4364)
+        ;
+
+        
+    
+    
+            var circle_marker_b9ab93b13d00aef2dd1ed2c40c15b7c3 = L.circleMarker(
+                [-12.1220145, -77.0246459],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_7362763dc54123a863b02a9d3c9f0ad6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e070af5cfa118e0e065c0c6407e37b38 = $(`<div id="html_e070af5cfa118e0e065c0c6407e37b38" style="width: 100.0%; height: 100.0%;"><b>18004 Av. Ernesto Diez Canseco - Av. Paseo de la República</b><br>Ocupación promedio: 0.32</div>`)[0];
+                popup_7362763dc54123a863b02a9d3c9f0ad6.setContent(html_e070af5cfa118e0e065c0c6407e37b38);
+            
+        
+
+        circle_marker_b9ab93b13d00aef2dd1ed2c40c15b7c3.bindPopup(popup_7362763dc54123a863b02a9d3c9f0ad6)
+        ;
+
+        
+    
+    
+            var circle_marker_f2bc24903325e1591f119bf788f54d80 = L.circleMarker(
+                [-12.110583, -77.036259],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_252a51f89bd285da28e72e7fd5c45c27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_208e6723de8ffc7ec6184de7174c3de9 = $(`<div id="html_208e6723de8ffc7ec6184de7174c3de9" style="width: 100.0%; height: 100.0%;"><b>18039 Psje. Juana Alarco De Dammert - Ov. Gutierrez</b><br>Ocupación promedio: 0.35</div>`)[0];
+                popup_252a51f89bd285da28e72e7fd5c45c27.setContent(html_208e6723de8ffc7ec6184de7174c3de9);
+            
+        
+
+        circle_marker_f2bc24903325e1591f119bf788f54d80.bindPopup(popup_252a51f89bd285da28e72e7fd5c45c27)
+        ;
+
+        
+    
+    
+            var circle_marker_85c97a5f22b40332db5c96d0d990716b = L.circleMarker(
+                [-12.113541, -77.049135],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_6af98a4414fd13a7045279b5b4d9084a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_212d3b07a9c7c075db4e42a8e739ccbb = $(`<div id="html_212d3b07a9c7c075db4e42a8e739ccbb" style="width: 100.0%; height: 100.0%;"><b>18045 Malecón de la Marina - Av. Federico Villarreal</b><br>Ocupación promedio: 0.39</div>`)[0];
+                popup_6af98a4414fd13a7045279b5b4d9084a.setContent(html_212d3b07a9c7c075db4e42a8e739ccbb);
+            
+        
+
+        circle_marker_85c97a5f22b40332db5c96d0d990716b.bindPopup(popup_6af98a4414fd13a7045279b5b4d9084a)
+        ;
+
+        
+    
+    
+            var circle_marker_86f72f2ea52b9fe6a934c1b16c0e49d0 = L.circleMarker(
+                [-12.127469, -77.011515],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_676312c86d76baee9c311eeca430d13b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c2118f5f3c6b6a76df1325ea192cb5e = $(`<div id="html_0c2118f5f3c6b6a76df1325ea192cb5e" style="width: 100.0%; height: 100.0%;"><b>18010 Ca. Placencia - Av. Benavides</b><br>Ocupación promedio: 0.39</div>`)[0];
+                popup_676312c86d76baee9c311eeca430d13b.setContent(html_0c2118f5f3c6b6a76df1325ea192cb5e);
+            
+        
+
+        circle_marker_86f72f2ea52b9fe6a934c1b16c0e49d0.bindPopup(popup_676312c86d76baee9c311eeca430d13b)
+        ;
+
+        
+    
+    
+            var circle_marker_881dfba7a52429f41758b22ab5c5c9f7 = L.circleMarker(
+                [-12.108822, -77.030403],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_7e03fcfe308d02142776cbdb013dbe7b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9314c8dcf54d5ba8ea577234db84ba46 = $(`<div id="html_9314c8dcf54d5ba8ea577234db84ba46" style="width: 100.0%; height: 100.0%;"><b>18036 Ca. Carlos Tenaud - Av. Arequipa</b><br>Ocupación promedio: 0.31</div>`)[0];
+                popup_7e03fcfe308d02142776cbdb013dbe7b.setContent(html_9314c8dcf54d5ba8ea577234db84ba46);
+            
+        
+
+        circle_marker_881dfba7a52429f41758b22ab5c5c9f7.bindPopup(popup_7e03fcfe308d02142776cbdb013dbe7b)
+        ;
+
+        
+    
+    
+            var circle_marker_106481039cb2e767cb50c271c5942a0c = L.circleMarker(
+                [-12.1232664, -77.0268261],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_e784d12b4d7c613a888e8d87ca7212fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2d3800ddc72b7e35349545307326e07 = $(`<div id="html_d2d3800ddc72b7e35349545307326e07" style="width: 100.0%; height: 100.0%;"><b>18007 Ca. Schell - Av. La Paz</b><br>Ocupación promedio: 0.29</div>`)[0];
+                popup_e784d12b4d7c613a888e8d87ca7212fd.setContent(html_d2d3800ddc72b7e35349545307326e07);
+            
+        
+
+        circle_marker_106481039cb2e767cb50c271c5942a0c.bindPopup(popup_e784d12b4d7c613a888e8d87ca7212fd)
+        ;
+
+        
+    
+    
+            var circle_marker_e52022453b22f35ee9bf0728a16492ff = L.circleMarker(
+                [-12.116439, -77.037294],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_97db7454cbd18ffb74a6158e1031fd22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32f5158c1dc23bd5df5611ac388c259f = $(`<div id="html_32f5158c1dc23bd5df5611ac388c259f" style="width: 100.0%; height: 100.0%;"><b>18040 Ca. Torre Tagle - Parque Piura</b><br>Ocupación promedio: 0.35</div>`)[0];
+                popup_97db7454cbd18ffb74a6158e1031fd22.setContent(html_32f5158c1dc23bd5df5611ac388c259f);
+            
+        
+
+        circle_marker_e52022453b22f35ee9bf0728a16492ff.bindPopup(popup_97db7454cbd18ffb74a6158e1031fd22)
+        ;
+
+        
+    
+    
+            var circle_marker_24a6e0d2ab54d3558c2e7fbc7410b32f = L.circleMarker(
+                [-12.107284, -77.028261],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_c9289dc1722c90ff6cf1015d35c4f74f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ffa05e427604ef2da2bbd95ff9768b4 = $(`<div id="html_1ffa05e427604ef2da2bbd95ff9768b4" style="width: 100.0%; height: 100.0%;"><b>18033 Ca. Scipión Llona Cdra.3</b><br>Ocupación promedio: 0.27</div>`)[0];
+                popup_c9289dc1722c90ff6cf1015d35c4f74f.setContent(html_1ffa05e427604ef2da2bbd95ff9768b4);
+            
+        
+
+        circle_marker_24a6e0d2ab54d3558c2e7fbc7410b32f.bindPopup(popup_c9289dc1722c90ff6cf1015d35c4f74f)
+        ;
+
+        
+    
+    
+            var circle_marker_0a3e3927ac785ffd8b263f1a8b78e437 = L.circleMarker(
+                [-12.110498, -77.044991],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_26dae389c80895571b643cc3ac915be4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6bb3a548224e41bb9a01a30520df689a = $(`<div id="html_6bb3a548224e41bb9a01a30520df689a" style="width: 100.0%; height: 100.0%;"><b>18037 Av. Angamos Oeste - Parque Naciones Unidas</b><br>Ocupación promedio: 0.26</div>`)[0];
+                popup_26dae389c80895571b643cc3ac915be4.setContent(html_6bb3a548224e41bb9a01a30520df689a);
+            
+        
+
+        circle_marker_0a3e3927ac785ffd8b263f1a8b78e437.bindPopup(popup_26dae389c80895571b643cc3ac915be4)
+        ;
+
+        
+    
+    
+            var circle_marker_3a6c90523f72f32a2de35b363219ddf3 = L.circleMarker(
+                [-12.119361, -77.026758],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_a87b82e4b79c2d1197d78a249df73ad1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59263d65b820adfb288101dbc98f593a = $(`<div id="html_59263d65b820adfb288101dbc98f593a" style="width: 100.0%; height: 100.0%;"><b>18003 Av.Ricardo Palma - Av. La Paz</b><br>Ocupación promedio: 0.35</div>`)[0];
+                popup_a87b82e4b79c2d1197d78a249df73ad1.setContent(html_59263d65b820adfb288101dbc98f593a);
+            
+        
+
+        circle_marker_3a6c90523f72f32a2de35b363219ddf3.bindPopup(popup_a87b82e4b79c2d1197d78a249df73ad1)
+        ;
+
+        
+    
+    
+            var circle_marker_26f6be856cb18276c868a74e786c2e0a = L.circleMarker(
+                [-12.1289245, -77.0269035],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_1329b370f7fd790d3d54098b9a9571aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e6ef321ea679c9e4f3a997c816898bf = $(`<div id="html_0e6ef321ea679c9e4f3a997c816898bf" style="width: 100.0%; height: 100.0%;"><b>18017 Ca. Manco Capac - Av. La Paz</b><br>Ocupación promedio: 0.45</div>`)[0];
+                popup_1329b370f7fd790d3d54098b9a9571aa.setContent(html_0e6ef321ea679c9e4f3a997c816898bf);
+            
+        
+
+        circle_marker_26f6be856cb18276c868a74e786c2e0a.bindPopup(popup_1329b370f7fd790d3d54098b9a9571aa)
+        ;
+
+        
+    
+    
+            var circle_marker_b8e4741f15290ec28bc103baa9c0051d = L.circleMarker(
+                [-12.133867, -77.028311],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_a26e613deafb309a3270621c2001c912 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_765a4c71a057e9c816de84f1b12a460d = $(`<div id="html_765a4c71a057e9c816de84f1b12a460d" style="width: 100.0%; height: 100.0%;"><b>18020 Mlcn. De la Reserva - Av. N. de Balboa (Parque Domodossola)</b><br>Ocupación promedio: 0.57</div>`)[0];
+                popup_a26e613deafb309a3270621c2001c912.setContent(html_765a4c71a057e9c816de84f1b12a460d);
+            
+        
+
+        circle_marker_b8e4741f15290ec28bc103baa9c0051d.bindPopup(popup_a26e613deafb309a3270621c2001c912)
+        ;
+
+        
+    
+    
+            var circle_marker_1591e8013871ae3f08b096008b3eaea5 = L.circleMarker(
+                [-12.11928, -77.03687],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_fa5af96aaca9a80b4553a50a45587217 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b4777fbd19c64b5f57b4044e552b124 = $(`<div id="html_0b4777fbd19c64b5f57b4044e552b124" style="width: 100.0%; height: 100.0%;"><b>18028 Av. Jorge Chávez - Av. Jose Pardo</b><br>Ocupación promedio: 0.48</div>`)[0];
+                popup_fa5af96aaca9a80b4553a50a45587217.setContent(html_0b4777fbd19c64b5f57b4044e552b124);
+            
+        
+
+        circle_marker_1591e8013871ae3f08b096008b3eaea5.bindPopup(popup_fa5af96aaca9a80b4553a50a45587217)
+        ;
+
+        
+    
+    
+            var circle_marker_80dd8791494f93c64c2e692a0cee1d56 = L.circleMarker(
+                [-12.111647, -77.033347],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_d2c59d2958aff26cedd88291413ae24e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbf97c52fabcf2dfb34aa85ca7f74607 = $(`<div id="html_bbf97c52fabcf2dfb34aa85ca7f74607" style="width: 100.0%; height: 100.0%;"><b>18038 Ca. Gral. Borgoño - Ca. Ayacucho</b><br>Ocupación promedio: 0.23</div>`)[0];
+                popup_d2c59d2958aff26cedd88291413ae24e.setContent(html_bbf97c52fabcf2dfb34aa85ca7f74607);
+            
+        
+
+        circle_marker_80dd8791494f93c64c2e692a0cee1d56.bindPopup(popup_d2c59d2958aff26cedd88291413ae24e)
+        ;
+
+        
+    
+    
+            var circle_marker_58f910ac0cb11216dda847ab154525d1 = L.circleMarker(
+                [-12.12378, -77.033694],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_257a6199120e037d008114a931926ae8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da3b83a539ebd6bb964c89fcd62f2545 = $(`<div id="html_da3b83a539ebd6bb964c89fcd62f2545" style="width: 100.0%; height: 100.0%;"><b>18023 Ca.BellavistaCdra.5</b><br>Ocupación promedio: 0.57</div>`)[0];
+                popup_257a6199120e037d008114a931926ae8.setContent(html_da3b83a539ebd6bb964c89fcd62f2545);
+            
+        
+
+        circle_marker_58f910ac0cb11216dda847ab154525d1.bindPopup(popup_257a6199120e037d008114a931926ae8)
+        ;
+
+        
+    
+    
+            var circle_marker_8c9d0b77b1c587904cf4040162968a2d = L.circleMarker(
+                [-12.135091, -77.024853],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_99d1392b627f2c8dd8a3e715eda6c4c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8cebe047b3643b08dd0fb8b7cd3d712 = $(`<div id="html_a8cebe047b3643b08dd0fb8b7cd3d712" style="width: 100.0%; height: 100.0%;"><b>18019 Boulevard Armendariz - Av. La Paz</b><br>Ocupación promedio: 0.68</div>`)[0];
+                popup_99d1392b627f2c8dd8a3e715eda6c4c1.setContent(html_a8cebe047b3643b08dd0fb8b7cd3d712);
+            
+        
+
+        circle_marker_8c9d0b77b1c587904cf4040162968a2d.bindPopup(popup_99d1392b627f2c8dd8a3e715eda6c4c1)
+        ;
+
+        
+    
+    
+            var circle_marker_2e049a03d7ceaa5ff05298e66a4a6683 = L.circleMarker(
+                [-12.12225, -77.020597],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_4a1550d5c7c1479acd77e8ccc7f74ae2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e577e1954aa8a958127b0dd14d2232dd = $(`<div id="html_e577e1954aa8a958127b0dd14d2232dd" style="width: 100.0%; height: 100.0%;"><b>18005 Av. Ricardo Palma - Av. Roca y Boloña ( Pq. Las Tradiciones)</b><br>Ocupación promedio: 0.35</div>`)[0];
+                popup_4a1550d5c7c1479acd77e8ccc7f74ae2.setContent(html_e577e1954aa8a958127b0dd14d2232dd);
+            
+        
+
+        circle_marker_2e049a03d7ceaa5ff05298e66a4a6683.bindPopup(popup_4a1550d5c7c1479acd77e8ccc7f74ae2)
+        ;
+
+        
+    
+    
+            var circle_marker_dcf9108d9cf116e870347263e38a6c66 = L.circleMarker(
+                [-12.1305704, -77.0195018],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_57b8f44f11d00025bb14ed28e921dfee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_815481030d27976ef57623d3425e7f9d = $(`<div id="html_815481030d27976ef57623d3425e7f9d" style="width: 100.0%; height: 100.0%;"><b>18013 Ca. Tejada - Av. 28 de Julio</b><br>Ocupación promedio: 0.57</div>`)[0];
+                popup_57b8f44f11d00025bb14ed28e921dfee.setContent(html_815481030d27976ef57623d3425e7f9d);
+            
+        
+
+        circle_marker_dcf9108d9cf116e870347263e38a6c66.bindPopup(popup_57b8f44f11d00025bb14ed28e921dfee)
+        ;
+
+        
+    
+    
+            var circle_marker_d9768181fc981d283415eafc06607045 = L.circleMarker(
+                [-12.119232, -77.033696],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_e5e3a6331f42bea916f40a876864893a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c985c1a48a6d2c73a13c4169afc9d329 = $(`<div id="html_c985c1a48a6d2c73a13c4169afc9d329" style="width: 100.0%; height: 100.0%;"><b>18029 Ca. Gral. Recavarren - Av. José Pardo</b><br>Ocupación promedio: 0.38</div>`)[0];
+                popup_e5e3a6331f42bea916f40a876864893a.setContent(html_c985c1a48a6d2c73a13c4169afc9d329);
+            
+        
+
+        circle_marker_d9768181fc981d283415eafc06607045.bindPopup(popup_e5e3a6331f42bea916f40a876864893a)
+        ;
+
+        
+    
+    
+            var circle_marker_3234d7339d6838097d8a96d355d6f200 = L.circleMarker(
+                [-12.111361, -77.051797],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_d6d2ffc62c4121e7feda6609d7641612 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f90f7044523ecdff9908bdeb08b7312 = $(`<div id="html_9f90f7044523ecdff9908bdeb08b7312" style="width: 100.0%; height: 100.0%;"><b>18044 Estadio Manuel Bonilla - Malecón de la Marina</b><br>Ocupación promedio: 0.63</div>`)[0];
+                popup_d6d2ffc62c4121e7feda6609d7641612.setContent(html_9f90f7044523ecdff9908bdeb08b7312);
+            
+        
+
+        circle_marker_3234d7339d6838097d8a96d355d6f200.bindPopup(popup_d6d2ffc62c4121e7feda6609d7641612)
+        ;
+
+        
+    
+    
+            var circle_marker_becefa40752a0b3172b481457900e1d7 = L.circleMarker(
+                [-12.113362, -77.0457856],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_701e4331eba2e3b9f36add86ed532b8e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9522500373a1878f2e86141d53a0c88f = $(`<div id="html_9522500373a1878f2e86141d53a0c88f" style="width: 100.0%; height: 100.0%;"><b>18049 Ca. Ignacio Merino - Av. La Mar</b><br>Ocupación promedio: 0.55</div>`)[0];
+                popup_701e4331eba2e3b9f36add86ed532b8e.setContent(html_9522500373a1878f2e86141d53a0c88f);
+            
+        
+
+        circle_marker_becefa40752a0b3172b481457900e1d7.bindPopup(popup_701e4331eba2e3b9f36add86ed532b8e)
+        ;
+
+        
+    
+    
+            var circle_marker_0add05b7bb0df4fece2ff8e597a3af2d = L.circleMarker(
+                [-12.116391, -77.026614],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_57ddf2cbe747dfdfbaecef0d9879fade = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42a657e810d5b8760b33d1fe1565569b = $(`<div id="html_42a657e810d5b8760b33d1fe1565569b" style="width: 100.0%; height: 100.0%;"><b>18031 Ca. Gonzales Prada - Av. Paseo de la República  (Parque Miranda)</b><br>Ocupación promedio: 0.30</div>`)[0];
+                popup_57ddf2cbe747dfdfbaecef0d9879fade.setContent(html_42a657e810d5b8760b33d1fe1565569b);
+            
+        
+
+        circle_marker_0add05b7bb0df4fece2ff8e597a3af2d.bindPopup(popup_57ddf2cbe747dfdfbaecef0d9879fade)
+        ;
+
+        
+    
+    
+            var circle_marker_74cca15c0fea10a0303d3e95c9a89ae8 = L.circleMarker(
+                [-12.114198, -77.038894],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_7fb2cfba5b10e1ab2980f4a7691c0e93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87fdd7ca90760aa6acdc319653f9d052 = $(`<div id="html_87fdd7ca90760aa6acdc319653f9d052" style="width: 100.0%; height: 100.0%;"><b>18041 Ca. Gral. Varela - Av. Angamos Oeste</b><br>Ocupación promedio: 0.29</div>`)[0];
+                popup_7fb2cfba5b10e1ab2980f4a7691c0e93.setContent(html_87fdd7ca90760aa6acdc319653f9d052);
+            
+        
+
+        circle_marker_74cca15c0fea10a0303d3e95c9a89ae8.bindPopup(popup_7fb2cfba5b10e1ab2980f4a7691c0e93)
+        ;
+
+        
+    
+    
+            var circle_marker_09de353f4e1224fe917c49b0e1711342 = L.circleMarker(
+                [-12.1135528, -77.0310859],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_c977b40409b79375561048e55dcbb65d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc34478f71efb2e2a0435d9e468f2556 = $(`<div id="html_dc34478f71efb2e2a0435d9e468f2556" style="width: 100.0%; height: 100.0%;"><b>18030 Ca. Atahualpa Cdra.6 (Parque Bonilla)</b><br>Ocupación promedio: 0.42</div>`)[0];
+                popup_c977b40409b79375561048e55dcbb65d.setContent(html_dc34478f71efb2e2a0435d9e468f2556);
+            
+        
+
+        circle_marker_09de353f4e1224fe917c49b0e1711342.bindPopup(popup_c977b40409b79375561048e55dcbb65d)
+        ;
+
+        
+    
+    
+            var circle_marker_3fb63620d33ff3b1424e77888b9fee4a = L.circleMarker(
+                [-12.1219288, -77.018143],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_4c844629f677d80912b48e41d6a64ccc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4bb12e72616d50d4a7bab341364ffa3b = $(`<div id="html_4bb12e72616d50d4a7bab341364ffa3b" style="width: 100.0%; height: 100.0%;"><b>18006 Av. Rep. de Panamá - Av. Gran Mcal. Ramón Castilla</b><br>Ocupación promedio: 0.44</div>`)[0];
+                popup_4c844629f677d80912b48e41d6a64ccc.setContent(html_4bb12e72616d50d4a7bab341364ffa3b);
+            
+        
+
+        circle_marker_3fb63620d33ff3b1424e77888b9fee4a.bindPopup(popup_4c844629f677d80912b48e41d6a64ccc)
+        ;
+
+        
+    
+    
+            var circle_marker_e51060a76a07bc1407c0113ad8b6a5e4 = L.circleMarker(
+                [-12.1258495, -77.0219643],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_ebe560112bd4a37453d3f2d15fb64dbd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ded695a722ebe208e1953c33229ebaa = $(`<div id="html_0ded695a722ebe208e1953c33229ebaa" style="width: 100.0%; height: 100.0%;"><b>18014 Ca. Ramon Ribeyro - Av. Benavides</b><br>Ocupación promedio: 0.33</div>`)[0];
+                popup_ebe560112bd4a37453d3f2d15fb64dbd.setContent(html_0ded695a722ebe208e1953c33229ebaa);
+            
+        
+
+        circle_marker_e51060a76a07bc1407c0113ad8b6a5e4.bindPopup(popup_ebe560112bd4a37453d3f2d15fb64dbd)
+        ;
+
+        
+    
+    
+            var circle_marker_428c46a4ab1081387c1e17471a3361e8 = L.circleMarker(
+                [-12.1193071, -77.015962],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_8b816459fe6a3d2d5198461a258d9d6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd56d2536fd693ac93f99a1a4efdc244 = $(`<div id="html_dd56d2536fd693ac93f99a1a4efdc244" style="width: 100.0%; height: 100.0%;"><b>18008 Ca.Lola Pardo - Ca. Mayor Arce de Oliva</b><br>Ocupación promedio: 0.30</div>`)[0];
+                popup_8b816459fe6a3d2d5198461a258d9d6e.setContent(html_dd56d2536fd693ac93f99a1a4efdc244);
+            
+        
+
+        circle_marker_428c46a4ab1081387c1e17471a3361e8.bindPopup(popup_8b816459fe6a3d2d5198461a258d9d6e)
+        ;
+
+        
+    
+    
+            var circle_marker_5be82cff5d94ea1da907ca0f093fba5b = L.circleMarker(
+                [-12.1170034, -77.042041],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_52d88cb7113874094ec70252f38fa4f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e82d1ba3c45bdc8ddc33297c52a9116f = $(`<div id="html_e82d1ba3c45bdc8ddc33297c52a9116f" style="width: 100.0%; height: 100.0%;"><b>18048 Av. Mariscal La Mar - Av. Santa Cruz</b><br>Ocupación promedio: 0.63</div>`)[0];
+                popup_52d88cb7113874094ec70252f38fa4f1.setContent(html_e82d1ba3c45bdc8ddc33297c52a9116f);
+            
+        
+
+        circle_marker_5be82cff5d94ea1da907ca0f093fba5b.bindPopup(popup_52d88cb7113874094ec70252f38fa4f1)
+        ;
+
+        
+    
+    
+            var circle_marker_7d261e816d13d177d76470fd70047908 = L.circleMarker(
+                [-12.126933, -77.0092536],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_467f7e00be268629fb54a37144eac3bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3435f3d3343fd22c5e3d947029c667ae = $(`<div id="html_3435f3d3343fd22c5e3d947029c667ae" style="width: 100.0%; height: 100.0%;"><b>18011 Ca. GermánA.Goméz - Av.JoseR.Gastón</b><br>Ocupación promedio: 0.67</div>`)[0];
+                popup_467f7e00be268629fb54a37144eac3bc.setContent(html_3435f3d3343fd22c5e3d947029c667ae);
+            
+        
+
+        circle_marker_7d261e816d13d177d76470fd70047908.bindPopup(popup_467f7e00be268629fb54a37144eac3bc)
+        ;
+
+        
+    
+    
+            var circle_marker_45922eb7b3b75da0b3d91342a557fd0a = L.circleMarker(
+                [-12.1231563, -77.0397424],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_8fc6aaf7531e1e3edfec49ce51a0b87b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9eb45d6e12c4ad3a1e2f65e4ca0c7e8c = $(`<div id="html_9eb45d6e12c4ad3a1e2f65e4ca0c7e8c" style="width: 100.0%; height: 100.0%;"><b>18025 Malecón Cisneros - (Parque del Faro La Marina)</b><br>Ocupación promedio: 0.44</div>`)[0];
+                popup_8fc6aaf7531e1e3edfec49ce51a0b87b.setContent(html_9eb45d6e12c4ad3a1e2f65e4ca0c7e8c);
+            
+        
+
+        circle_marker_45922eb7b3b75da0b3d91342a557fd0a.bindPopup(popup_8fc6aaf7531e1e3edfec49ce51a0b87b)
+        ;
+
+        
+    
+    
+            var circle_marker_635ca3cf5446a4e802ed22482f09040f = L.circleMarker(
+                [-12.105838, -77.033209],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_41ba20cac5472d61807bf8c359f8a41d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_558e8d50278ddd61ff5faca6cf4da872 = $(`<div id="html_558e8d50278ddd61ff5faca6cf4da872" style="width: 100.0%; height: 100.0%;"><b>18035 Ca. Santander - Av. Santa Cruz</b><br>Ocupación promedio: 0.38</div>`)[0];
+                popup_41ba20cac5472d61807bf8c359f8a41d.setContent(html_558e8d50278ddd61ff5faca6cf4da872);
+            
+        
+
+        circle_marker_635ca3cf5446a4e802ed22482f09040f.bindPopup(popup_41ba20cac5472d61807bf8c359f8a41d)
+        ;
+
+        
+    
+    
+            var circle_marker_b981a4abdb38cad746960d8de076ac74 = L.circleMarker(
+                [-12.1257284, -77.02794],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_a0129e410a6c7adff5be4c9f6418d532 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b638fd8a4a81f2e88ca03cd1b1a0191a = $(`<div id="html_b638fd8a4a81f2e88ca03cd1b1a0191a" style="width: 100.0%; height: 100.0%;"><b>18015 Ca. Bolivar - Ca. Alcanfores</b><br>Ocupación promedio: 0.32</div>`)[0];
+                popup_a0129e410a6c7adff5be4c9f6418d532.setContent(html_b638fd8a4a81f2e88ca03cd1b1a0191a);
+            
+        
+
+        circle_marker_b981a4abdb38cad746960d8de076ac74.bindPopup(popup_a0129e410a6c7adff5be4c9f6418d532)
+        ;
+
+        
+    
+    
+            var circle_marker_fe20f30869d9099e2c8f79c0cf72c5e0 = L.circleMarker(
+                [-12.113642, -77.040507],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_7687dd297f5e9d19e7e89c65243f3e64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b223cfabeca3b9c99559668eb276ec4d = $(`<div id="html_b223cfabeca3b9c99559668eb276ec4d" style="width: 100.0%; height: 100.0%;"><b>18042 Ca. Retiro - Av. Angamos Oeste</b><br>Ocupación promedio: 0.24</div>`)[0];
+                popup_7687dd297f5e9d19e7e89c65243f3e64.setContent(html_b223cfabeca3b9c99559668eb276ec4d);
+            
+        
+
+        circle_marker_fe20f30869d9099e2c8f79c0cf72c5e0.bindPopup(popup_7687dd297f5e9d19e7e89c65243f3e64)
+        ;
+
+        
+    
+    
+            var circle_marker_e391e841b21a051ba63fb5ddc072e227 = L.circleMarker(
+                [-12.1153256, -77.0332091],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_a5606b76aa3949cc158db781874a680e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2075f4937525886a361de4443347837f = $(`<div id="html_2075f4937525886a361de4443347837f" style="width: 100.0%; height: 100.0%;"><b>18050 Ca. Gral. Borgoño - Parque Manuel Solari</b><br>Ocupación promedio: 0.41</div>`)[0];
+                popup_a5606b76aa3949cc158db781874a680e.setContent(html_2075f4937525886a361de4443347837f);
+            
+        
+
+        circle_marker_e391e841b21a051ba63fb5ddc072e227.bindPopup(popup_a5606b76aa3949cc158db781874a680e)
+        ;
+
+        
+    
+    
+            var circle_marker_24419ce593fc218ecf3ae6e7a0a0616f = L.circleMarker(
+                [-12.113475, -77.027247],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_4b39c70b3194ab3f328b0d398319c535 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f29fea59dffe9a0127ac644b1d9e020b = $(`<div id="html_f29fea59dffe9a0127ac644b1d9e020b" style="width: 100.0%; height: 100.0%;"><b>18032 Ca. Gral. Suarez - Av .Angamos Oeste</b><br>Ocupación promedio: 0.27</div>`)[0];
+                popup_4b39c70b3194ab3f328b0d398319c535.setContent(html_f29fea59dffe9a0127ac644b1d9e020b);
+            
+        
+
+        circle_marker_24419ce593fc218ecf3ae6e7a0a0616f.bindPopup(popup_4b39c70b3194ab3f328b0d398319c535)
+        ;
+
+        
+    
+    
+            var circle_marker_a41acaeb07068398330206743a7b1020 = L.circleMarker(
+                [-12.117261, -77.045922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_d5c6ec0a382f30e41d9ff23617d1be64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfd0c6562b208456778bf3c8792341e1 = $(`<div id="html_cfd0c6562b208456778bf3c8792341e1" style="width: 100.0%; height: 100.0%;"><b>18046 Malecón de la Marina - Skate Park</b><br>Ocupación promedio: 0.33</div>`)[0];
+                popup_d5c6ec0a382f30e41d9ff23617d1be64.setContent(html_cfd0c6562b208456778bf3c8792341e1);
+            
+        
+
+        circle_marker_a41acaeb07068398330206743a7b1020.bindPopup(popup_d5c6ec0a382f30e41d9ff23617d1be64)
+        ;
+
+        
+    
+    
+            var circle_marker_a9ccc991abf8e6d5e99eae30d9b6be57 = L.circleMarker(
+                [-12.126223, -77.017232],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_2e74265189b63ff76ee85c710ba70ebe);
+        
+    
+        var popup_6d507f45882b3bf1fccbe603af5ce909 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9885be4175913b223137793a43e7e19 = $(`<div id="html_e9885be4175913b223137793a43e7e19" style="width: 100.0%; height: 100.0%;"><b>18012 Ca. Ignacio La Puente - Av. Benavides</b><br>Ocupación promedio: 0.28</div>`)[0];
+                popup_6d507f45882b3bf1fccbe603af5ce909.setContent(html_e9885be4175913b223137793a43e7e19);
+            
+        
+
+        circle_marker_a9ccc991abf8e6d5e99eae30d9b6be57.bindPopup(popup_6d507f45882b3bf1fccbe603af5ce909)
+        ;
+
+        
+    
+    
+            marker_cluster_2e74265189b63ff76ee85c710ba70ebe.addTo(map_9308ddfdb17fb37eb141f64233e5a538);
+        
+</script>
+</html>
