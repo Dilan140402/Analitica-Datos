@@ -2,7 +2,7 @@ name: CityBike Lima Scraper
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # Cada 30 minutos
+    - cron: "*0,30 * * * *"   # Cada 30 minutos
   workflow_dispatch:          # Permite lanzarlo manualmente
 
 permissions:
