@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CityBike Lima - Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <h2>🚲 CityBike Lima</h2>
+    <p>Inicia sesión para continuar</p>
+
+    <input id="username" type="text" placeholder="Usuario" required>
+    <input id="password" type="password" placeholder="Contraseña" required>
+
+    <button onclick="login()">Ingresar</button>
+    <p id="error-msg" class="error"></p>
+  </div>
+
+  <script>
+    async function login() {
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const errorMsg = document.getElementById('error-msg');
+
+      errorMsg.textContent = '';
+
+      const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+      });
+
+      const data = await res.json();
+      
+      if (data.success) {
+        localStorage.setItem('loggedIn', 'true');
+        window.location.href = '/';
+      } else {
+        errorMsg.textContent = 'Usuario o contraseña incorrectos';
+      }
+
+    }
+  </script>
+</body>
+</html>

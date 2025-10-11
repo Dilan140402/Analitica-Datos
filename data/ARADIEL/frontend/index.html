@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>CityBike Lima - Monitoreo de Estaciones</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+  <script>
+    // Si no está logueado, redirige al login
+    if (!localStorage.getItem('loggedIn')) {
+      window.location.href = '/login';
+    }
+  </script>
+
+<style>
+  /* ==== Panel lateral de alertas ==== */
+  #alerts {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    background: rgba(255,255,255,0.95);
+    padding: 10px;
+    border-radius: 8px;
+    width: 280px;
+    max-height: 350px;
+    overflow-y: auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    z-index: 500; /* asegura que esté por encima del mapa */
+  }
+  #alerts h3 {
+    margin-top: 0;
+    color: #0077cc;
+    text-align: center;
+  }
+  #alerts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #alerts li {
+    margin: 6px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+  }
+  #alerts button {
+    margin-top: 4px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 8px;
+    cursor: pointer;
+  }
+  #alerts button:hover {
+    background: #005fa3;
+  }
+
+  /* ==== Mapa ==== */
+  #map {
+    width: 100%;
+    height: calc(100vh - 250px); /* deja espacio para el panel inferior */
+  }
+
+  /* ==== Panel inferior de estaciones ==== */
+  #station-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.97);
+    overflow-y: auto;
+    border-top: 2px solid #0077cc;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+    padding: 10px 15px;
+    z-index: 600; /* sobre el mapa */
+  }
+
+  #station-panel h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #0077cc;
+  }
+
+  #station-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #station-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  #station-list button {
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+
+  #station-list button:hover {
+    background: #005fa3;
+  }
+</style>
+  
+</head>
+
+<body class="map-page">
+  <button id="logout-btn" onclick="logout()">🚪 Cerrar sesión</button> Cerrar sesión</button>
+  <!-- ✅ Redirección si no hay sesión -->
+
+  <h1>🚴 CityBike Lima - Monitoreo de Estaciones</h1>
+
+  <!-- 🗺️ Contenedor principal del mapa -->
+   <!-- 🔓 Botón de Cerrar sesión -->
+
+  <div id="app">
+    <div id="map"></div>
+
+    <!-- ⚠️ Panel lateral de alertas -->
+    <div id="alerts">
+      <h3>⚠️ Estaciones con pocas bicicletas</h3>
+      <ul id="low-list"></ul>
+    </div>
+
+    <!-- 🔻 Panel inferior de estaciones -->
+    <div id="station-panel">
+      <h3>🚲 Estaciones CityBike Lima</h3>
+      <ul id="station-list"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
